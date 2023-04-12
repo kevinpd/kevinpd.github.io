@@ -1,12 +1,29 @@
 // Colours
+@black: rgb(0,0,0);
+@white: rgb(255,255,255);
+
 @main: rgb(90, 32, 24);
 @accent: rgb(208, 211, 46);
 @hr: rgb(19, 19, 19);
+
+@text_col: rgb(17, 17, 17);
+
+@background_fallback: rgb(0,0,0);
+@background: radial-gradient(ellipse at 5% 5%, #e3c8db 0%, #d497c3 25%, #5a7bbe 100%, transparent);
+
+@thumbnail_grid_bg: rgba(250, 231, 248, 0.4);
+@thumbnail_grid_border: rgb(250, 231, 248);
+@thumbnail_grid_shadow: 0 0 10px 0 transparent;
+@thumbnail_grid_hover_bg: rgb(250, 231, 248);
+@thumbnail_grid_hover_shadow: 0 0 10px 0 rgba(17,17,17,0.4);
 
 // Mixins
 .fontSize(@size) {
     font-size: @size * 1px;
     font-size: @size * 0.1rem;
+}
+.transition(@type: all, @trans: ease-in-out, @speed: 300ms) {
+    transition: @type @trans @speed;
 }
 
 // Styles
@@ -28,8 +45,18 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+
+    background: @background_fallback;
+    background: @background;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    place-items: center;
     h1, h2, h3, h4, h5, h6, p, a, ul, li, span {
-        color: @main;
+        color: @text_col;
     }
     h1, h2, h3, h4, h5, h6 {
         margin: 0 0 20px;
@@ -92,14 +119,6 @@ footer {
 
 header {
     position: relative;
-    border-bottom: 7px solid @main;
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -7px; left: 0;
-        border-bottom: 7px solid transparent;
-        border-right: 100vw solid @accent;
-    }
     .page-title {
         position: relative;
         text-align: center;
@@ -108,14 +127,7 @@ header {
 
 footer {
     position: relative;
-    border-top: 7px solid @main;
-    &::after {
-        content: '';
-        position: absolute;
-        top: -7px; left: 0;
-        border-top: 7px solid transparent;
-        border-left: 100vw solid @accent;
-    }
+    text-align: right;
 }
 
 main {
@@ -127,6 +139,38 @@ main {
             .fontSize(42);
             color: @main;
             padding: 0;
+        }
+    }
+}
+
+.thumbnail-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 20px;
+    .grid-entry {
+        a {
+            display: grid;
+            gap: 15px;
+            background-color: @thumbnail_grid_bg;
+            padding: 35px 25px;
+            word-break: break-word;
+            .fontSize(30);
+            text-decoration: none;
+            text-align: center;
+            border: 2px solid @thumbnail_grid_border;
+            border-radius: 15px;
+            box-shadow: @thumbnail_grid_shadow;
+            .transition();
+            i {
+                display: block;
+            }
+            &:hover, &:focus, &:active {
+                background-color: @thumbnail_grid_hover_bg;
+                box-shadow: @thumbnail_grid_hover_shadow;
+                transform: scale(1.05);
+            }
         }
     }
 }
