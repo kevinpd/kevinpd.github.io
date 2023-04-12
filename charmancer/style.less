@@ -1,0 +1,132 @@
+// Colours
+@main: rgb(90, 32, 24);
+@accent: rgb(208, 211, 46);
+@hr: rgb(19, 19, 19);
+
+// Mixins
+.fontSize(@size) {
+    font-size: @size * 1px;
+    font-size: @size * 0.1rem;
+}
+
+// Styles
+html {
+    font-family: 'Alkatra', sans-serif;
+    font-size: 10px;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: auto;
+    left: -9999px;
+    overflow: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    h1, h2, h3, h4, h5, h6, p, a, ul, li, span {
+        color: @main;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 20px;
+    }
+    p, a, ul, li, span {
+        .fontSize(20);
+    }
+    h1 {.fontSize(52)}
+    h2 {.fontSize(42)}
+    h3 {.fontSize(36)}
+    h4 {.fontSize(30)}
+    h5 {.fontSize(26)}
+    h6 {.fontSize(22)}
+}
+
+header,
+main,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+.grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container {
+    width: 1170px;
+    @media (max-width: 1199px) {
+        width: 950px;
+    }
+    @media (max-width: 991px) {
+        width: 750px;
+    }
+    @media (max-width: 767px) {
+        width: 540px;
+    }
+    @media (max-width: 576px) {
+        width: auto;
+    }
+}
+
+.section {
+    &:not(:last-child) {
+        border-bottom: 2px solid @hr;
+    }
+}
+
+header {
+    position: relative;
+    border-bottom: 7px solid @main;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -7px; left: 0;
+        border-bottom: 7px solid transparent;
+        border-right: 100vw solid @accent;
+    }
+    .page-title {
+        position: relative;
+        text-align: center;
+    }
+}
+
+footer {
+    position: relative;
+    border-top: 7px solid @main;
+    &::after {
+        content: '';
+        position: absolute;
+        top: -7px; left: 0;
+        border-top: 7px solid transparent;
+        border-left: 100vw solid @accent;
+    }
+}
+
+main {
+    fieldset {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        legend {
+            .fontSize(42);
+            color: @main;
+            padding: 0;
+        }
+    }
+}
