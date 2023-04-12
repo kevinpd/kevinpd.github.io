@@ -1,0 +1,11 @@
+# ignore node modules used for building
+/node_modules
+/build/node_modules
+/build/release
+/build/Gruntfile.parameters.js
+/build/npm-debug.log
+
+# Ignore Gulp and NPM Package stuff
+/gulpfile.js
+/package-lock.json
+/package.json
