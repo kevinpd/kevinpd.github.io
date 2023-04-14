@@ -40,9 +40,45 @@ const abilityScores = [
     "Stealth",
     "Survival",
     "Wisdom",
-] 
+];
 
-let notifCounter = 0;
+const clubs = [
+    ["convenience", "24hr Convenience Store",],
+    ["pottery", "Pottery Cleaner",],
+    ["paper", "Paper boy",],
+    ["rugby", "Rugby",],
+    ["football", "Football",],
+    ["basketball", "Basketball",],
+    ["book", "Book Club",],
+    ["chess", "Chess Club",],
+    ["gymnastics", "Gymnastics",],
+    ["clubScience", "Science Club",],
+    ["games", "Games Club",],
+    ["bouldering", "Bouldering",],
+    ["clubArt", "Art",],
+    ["karate", "Karate",],
+];
+
+const feats = [
+    "Alert",
+    "Resilient",
+    "Keen mind",
+    "Charger",
+    "Slasher",
+    "Dwarf Fortitude",
+    "Observant",
+    "Mobile",
+    "Dungeon Delver",
+    "Athlete",
+    "Grappler",
+    "Master of Disguise",
+    "Master of Mapping",
+    "Anticipate",
+    "Alchemist",
+    "Medic",
+    "I am Artiste",
+];
+
 const wait = ms => new Promise(res => setTimeout(res, ms));
 
 async function notif(message, level = null) {
@@ -67,42 +103,50 @@ async function notif(message, level = null) {
 
 }
 
-let outputClass = '';
-const htmlClass = document.querySelector("main .classes");
-classes.forEach(function(e) {
-    if (htmlClass) {
-        let input = document.createElement("input");
-        input.setAttribute("type", "checkbox");
-        input.setAttribute("name", e[0]);
-        input.setAttribute("id", e[0]);
-        input.setAttribute("value", e[0]);
-        input.setAttribute("class", 'visually-hidden');
-        htmlClass.appendChild(input);
-        let label = document.createElement("label");
-        label.setAttribute("for", e[0]);
-        label.innerText = e[1];
-        htmlClass.appendChild(label);
-    }
-});
-
-let classesInput = document.querySelectorAll("main .classes input");
-let classesCounter = 0;
-classesInput.forEach(function(e) {
-    e.addEventListener("click", function() {
-        if (e.checked) {
-            if (classesCounter < 5) {
-                classesCounter++;
-            } else {
-                e.checked = false;
-                if (notifCounter < 2) {
-                    notifCounter++;
-                } else {
-                    notif('You are only allowed to select 5 classes', 'a');
-                    notifCounter = 0;
-                }
-            }
-        } else {
-            classesCounter--;
+function fieldsetCreator(array, outputTo) {
+    array.forEach(function(e) {
+        if (outputTo) {
+            let input = document.createElement("input");
+            input.setAttribute("type", "checkbox");
+            input.setAttribute("name", e[0]);
+            input.setAttribute("id", e[0]);
+            input.setAttribute("value", e[0]);
+            input.setAttribute("class", 'visually-hidden');
+            outputTo.appendChild(input);
+            let label = document.createElement("label");
+            label.setAttribute("for", e[0]);
+            label.innerText = e[1];
+            outputTo.appendChild(label);
         }
     });
-});
+}
+
+fieldsetCreator(classes, document.querySelector("main .classes"));
+fieldsetCreator(clubs, document.querySelector("main .clubs"));
+
+function fieldsetSelect(input, max, notifMessage, notifStatus) {
+    let classesCounter = 0;
+    let notifCounter = 0;
+    input.forEach(function(e) {
+        e.addEventListener("click", function() {
+            if (e.checked) {
+                if (classesCounter < max) {
+                    classesCounter++;
+                } else {
+                    e.checked = false;
+                    if (notifCounter < 2) {
+                        notifCounter++;
+                    } else {
+                        notif(notifMessage, notifStatus);
+                        notifCounter = 0;
+                    }
+                }
+            } else {
+                classesCounter--;
+            }
+        });
+    });
+};
+
+fieldsetSelect(document.querySelectorAll("main .classes input"), 5, "You are only allowed to select 5 classes", "r");
+fieldsetSelect(document.querySelectorAll("main .clubs input"), 3, "You are only allowed to select 3 clubs/work", "r");
