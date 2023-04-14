@@ -11,11 +11,21 @@
 @background_fallback: rgb(0,0,0);
 @background: radial-gradient(ellipse at 5% 5%, #e3c8db 0%, #d497c3 25%, #5a7bbe 100%, transparent);
 
+@notification_bg: rgba(255, 255, 255, 0.95);
+
 @thumbnail_grid_bg: rgba(250, 231, 248, 0.4);
 @thumbnail_grid_border: rgb(250, 231, 248);
 @thumbnail_grid_shadow: 0 0 10px 0 transparent;
 @thumbnail_grid_hover_bg: rgb(250, 231, 248);
 @thumbnail_grid_hover_shadow: 0 0 10px 0 rgba(17,17,17,0.4);
+
+@fieldset_label_bg: @thumbnail_grid_bg;
+@fieldset_label_border: @thumbnail_grid_border;
+@fieldset_label_shadow: 0 0 10px 0 rgba(17, 17, 17, 0.2);
+@fieldset_label_hover_bg: @thumbnail_grid_hover_bg;
+@fieldset_label_hover_shadow: 0 0 10px 0 rgba(17,17,17,0.4);
+@fieldset_label_checked_bg: rgb(54, 202, 202);
+@fieldset_label_checked_shadow: inset 0 0 10px 0 rgba(17,17,17,0.4);
 
 // Mixins
 .fontSize(@size) {
@@ -117,6 +127,23 @@ footer {
     }
 }
 
+.notification {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: @notification_bg;
+    text-align: center;
+    opacity: 1;
+    border-radius: 0 0 12px 12px;
+    z-index: 100;
+    .transition();
+    &.hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
 header {
     position: relative;
     .page-title {
@@ -132,13 +159,37 @@ footer {
 
 main {
     fieldset {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         border: 0;
         padding: 0;
         margin: 0;
         legend {
-            .fontSize(42);
-            color: @main;
             padding: 0;
+            color: @text_col;
+            .fontSize(42);
+            font-weight: bold;
+        }
+        label {
+            .fontSize(20);
+            margin: 10px;
+            padding: 8px 15px;
+            background-color: @fieldset_label_bg;
+            border: 1px solid @fieldset_label_border;
+            border-radius: 8px;
+            box-shadow: @fieldset_label_shadow;
+            .transition();
+            &:hover, &:focus, &:active {
+                background-color: @fieldset_label_hover_bg;
+                box-shadow: @fieldset_label_hover_shadow;
+                cursor: pointer;
+            }
+        }
+        input:checked {
+            + label {
+                background-color: @fieldset_label_checked_bg;
+                box-shadow: @fieldset_label_checked_shadow;
+            }
         }
     }
 }

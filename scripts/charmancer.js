@@ -42,6 +42,31 @@ const abilityScores = [
     "Wisdom",
 ] 
 
+let notifCounter = 0;
+const wait = ms => new Promise(res => setTimeout(res, ms));
+
+async function notif(message, level = null) {
+    let notif = document.querySelector(".notification"), messageOut = '';
+    switch(level) {
+        case 'r':
+            messageOut += "Error: ";
+            break;
+        case 'a':
+            messageOut += "Warning: ";
+            break;
+        case 'g':
+            messageOut += "Info: ";
+            break;
+        case 'default':
+            break;
+    }
+    notif.classList.remove("hidden");
+    document.querySelector(".notification .message").textContent  = messageOut + message;
+    await wait(3000);
+    notif.classList.add("hidden");
+
+}
+
 let outputClass = '';
 const htmlClass = document.querySelector("main .classes");
 classes.forEach(function(e) {
@@ -58,4 +83,26 @@ classes.forEach(function(e) {
         label.innerText = e[1];
         htmlClass.appendChild(label);
     }
+});
+
+let classesInput = document.querySelectorAll("main .classes input");
+let classesCounter = 0;
+classesInput.forEach(function(e) {
+    e.addEventListener("click", function() {
+        if (e.checked) {
+            if (classesCounter < 5) {
+                classesCounter++;
+            } else {
+                e.checked = false;
+                if (notifCounter < 2) {
+                    notifCounter++;
+                } else {
+                    notif('You are only allowed to select 5 classes', 'a');
+                    notifCounter = 0;
+                }
+            }
+        } else {
+            classesCounter--;
+        }
+    });
 });
