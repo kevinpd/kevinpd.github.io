@@ -7,44 +7,20 @@
     <title>Homepage || Isekaied</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+        $("#content").load("pages/home.html"); 
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="page-title">Isekaied App</h1>
-        </div>
-    </header>
     
-    <main>
-        <div class="container">
-            <ul class="thumbnail-grid">
-                <li class="grid-entry">
-                    <a href="pages/charmancer/charmancer.html">
-                        <i class="fa-solid fa-people-arrows"></i>
-                        Charactermancer
-                    </a>
-                </li>
-                <li class="grid-entry">
-                    <a href="pages/charmancer/charmancer.html">
-                        <i class="fa-solid fa-people-arrows"></i>
-                        Other
-                    </a>
-                </li>
-                <li class="grid-entry">
-                    <a href="pages/charmancer/charmancer.html">
-                        <i class="fa-solid fa-people-arrows"></i>
-                        Shop
-                    </a>
-                </li>
-                <li class="grid-entry">
-                    <a href="pages/charmancer/charmancer.html">
-                        <i class="fa-solid fa-people-arrows"></i>
-                        Stuff
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </main>
+    <div id="content"></div>
 
     <footer>
         <div class="container">
