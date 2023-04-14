@@ -79,8 +79,8 @@ const feats = [
     "I am Artiste",
 ];
 
-fieldsetCreator(classes, document.querySelector("main .classes"));
+fieldsetCreator(classes, document.querySelector("main .classes"), true);
 fieldsetCreator(clubs, document.querySelector("main .clubs"));
 
-fieldsetSelect(document.querySelectorAll("main .classes input"), 5, "You are only allowed to select 5 classes", "r");
+fieldsetSelect(document.querySelectorAll("main .classes input"), 5, "You are only allowed to select 5 classes", "r", true);
 fieldsetSelect(document.querySelectorAll("main .clubs input"), 3, "You are only allowed to select 3 clubs/work", "r");

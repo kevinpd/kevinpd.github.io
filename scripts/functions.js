@@ -26,7 +26,7 @@ async function notif(message, level = null) {
 }
 
 // Charmancer create fieldset for all array options
-function fieldsetCreator(array, outputTo) {
+function fieldsetCreator(array, outputTo, isClass = false) {
     array.forEach(function(e) {
         if (outputTo) {
             let input = document.createElement("input");
@@ -35,6 +35,10 @@ function fieldsetCreator(array, outputTo) {
             input.setAttribute("id", e[0]);
             input.setAttribute("value", e[0]);
             input.setAttribute("class", 'visually-hidden');
+            // if is class add custom attribute data skill to pass to selector
+            if (isClass) {
+                input.setAttribute("data-skill", e[2][0]);
+            }
             outputTo.appendChild(input);
             let label = document.createElement("label");
             label.setAttribute("for", e[0]);
@@ -45,14 +49,81 @@ function fieldsetCreator(array, outputTo) {
 }
 
 // Charmancer when options selected
-function fieldsetSelect(input, max, notifMessage, notifStatus) {
+function fieldsetSelect(input, max, notifMessage, notifStatus, isClass = false) {
     let classesCounter = 0;
     let notifCounter = 0;
+    if (isClass) {
+        var str = 0, dex = 0, con = 0, int = 0, wis = 0, cha = 0;
+    }
     input.forEach(function(e) {
         e.addEventListener("click", function() {
             if (e.checked) {
                 if (classesCounter < max) {
                     classesCounter++;
+                    if (isClass) {
+                        switch (e.getAttribute("data-skill")) {
+                            case 'str':
+                                str++;
+                                if (str >= 2) {
+                                    input.forEach(function(b) {
+                                        if (b.getAttribute("data-skill") === e.getAttribute("data-skill") && !b.checked) {
+                                            b.setAttribute("disabled", true);
+                                        }
+                                    })
+                                }
+                                break;
+                            case 'dex':
+                                dex++;
+                                if (dex >= 2) {
+                                    input.forEach(function(b) {
+                                        if (b.getAttribute("data-skill") === e.getAttribute("data-skill") && !b.checked) {
+                                            b.setAttribute("disabled", true);
+                                        }
+                                    })
+                                }
+                                break;
+                            case 'con':
+                                con++;
+                                if (con >= 2) {
+                                    input.forEach(function(b) {
+                                        if (b.getAttribute("data-skill") === e.getAttribute("data-skill") && !b.checked) {
+                                            b.setAttribute("disabled", true);
+                                        }
+                                    })
+                                }
+                                break;
+                            case 'int':
+                                int++;
+                                if (int >= 2) {
+                                    input.forEach(function(b) {
+                                        if (b.getAttribute("data-skill") === e.getAttribute("data-skill") && !b.checked) {
+                                            b.setAttribute("disabled", true);
+                                        }
+                                    })
+                                }
+                                break;
+                            case 'wis':
+                                wis++;
+                                if (wis >= 2) {
+                                    input.forEach(function(b) {
+                                        if (b.getAttribute("data-skill") === e.getAttribute("data-skill") && !b.checked) {
+                                            b.setAttribute("disabled", true);
+                                        }
+                                    })
+                                }
+                                break;
+                            case 'cha':
+                                cha++;
+                                if (cha >= 2) {
+                                    input.forEach(function(b) {
+                                        if (b.getAttribute("data-skill") === e.getAttribute("data-skill") && !b.checked) {
+                                            b.setAttribute("disabled", true);
+                                        }
+                                    })
+                                }
+                                break;
+                        }
+                    }
                 } else {
                     e.checked = false;
                     if (notifCounter < 2) {
@@ -64,6 +135,71 @@ function fieldsetSelect(input, max, notifMessage, notifStatus) {
                 }
             } else {
                 classesCounter--;
+                if (isClass) {
+                    switch (e.getAttribute("data-skill")) {
+                        case 'str':
+                            str--;
+                            if (str < 2) {
+                                input.forEach(function(b) {
+                                    if (b.getAttribute("data-skill") === e.getAttribute("data-skill")) {
+                                        b.removeAttribute("disabled");
+                                    }
+                                })
+                            }
+                            break;
+                        case 'dex':
+                            dex--;
+                            if (dex < 2) {
+                                input.forEach(function(b) {
+                                    if (b.getAttribute("data-skill") === e.getAttribute("data-skill")) {
+                                        b.removeAttribute("disabled");
+                                    }
+                                })
+                            }
+                            break;
+                        case 'con':
+                            con--;
+                            if (con < 2) {
+                                input.forEach(function(b) {
+                                    if (b.getAttribute("data-skill") === e.getAttribute("data-skill")) {
+                                        b.removeAttribute("disabled");
+                                    }
+                                })
+                            }
+                            break;
+                        case 'int':
+                            int--;
+                            if (int < 2) {
+                                console.log(int);
+                                input.forEach(function(b) {
+                                    if (b.getAttribute("data-skill") === e.getAttribute("data-skill")) {
+                                        b.removeAttribute("disabled");
+                                    }
+                                })
+                            }
+                            break;
+                        case 'wis':
+                            wis--;
+                            if (wis < 2) {
+                                input.forEach(function(b) {
+                                    if (b.getAttribute("data-skill") === e.getAttribute("data-skill")) {
+                                        b.setAttribute("disabled");
+                                    }
+                                })
+                            }
+                            break;
+                        case 'cha':
+                            cha--;
+                            if (cha < 2) {
+                                input.forEach(function(b) {
+                                    if (b.getAttribute("data-skill") === e.getAttribute("data-skill")) {
+                                        b.removeAttribute("disabled");
+                                    }
+                                })
+                            }
+                            break;
+                    }
+                }
             }
         });
     });
