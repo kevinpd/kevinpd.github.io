@@ -1,0 +1,15 @@
+rules = [
+    ['Critical Strikes', ["Weapon damage dice as if rolled at maximum value + ability modifier + additional weapon damage dice."]],
+    ['Disengaging', ["Using the disengage action or bonus action will allow you to move 5ft in a direction of your choosing without triggering attacks of opportunity. Any other movement which would trigger an opportunity attack on that turn will have disadvantage."]],
+    ['Concussion', ["When reduced to 0 hit points you receive 1 level of concussion which is stackable. You receive a minus 1 penalty to all d20 rolls for each stack of concussion. Upon reaching 10 stacks you are considered comatose and cannot become consious until a long rest is completed (even if you receive healing). 1 stack of concussion is removed each time a long rest is successfully completed."]],
+    ['Being Downed', ["Whilst on 0 hit points you are in a state of indisposition, functioning mechanically as if you were unconcious however you are able to utter incoherant words etc. Upon succeeding 3 death saving throws you then become unconcious, failing the saves leads to death as usual.", "Additionally saving throws will be made in secret.", "Downed enemies will auto fail their saving throws (unless felled by non-lethal damage)."]],
+    ['Bloodied', ["When taken to below 50% HP you become bloodied, receiving an effect from the bloodied table. The effect lasts until you finish a short or long rest and have healed above 50% HP or unless stated otherwise.", "Enemies will also become bloodied - most will have the set feature of losing 1 AC however the more important enemies will also roll on the table."]],
+    ['Hit Points', ["Upon reaching a new level, you roll your hit die accordingly, if you roll a 1 you may reroll but must take the new value."]],
+    ['Health Potions', ["You may use a bonus action to quickly take your potion, roll for health gain. Alternatively you may use your whole action to receive the full amount of healing possible.", "Feeding a potion to an ally will take an action, if that ally is unconscious then you must roll for health gain otherwise they receive the full amount."]],
+    ['Money', ["A pouch can hold 300 coins.", "10 of a coin type is equal to 1 of the next tier up."]],
+    ['Attunement', ["You have attunement slots equal to your character level. Magic items will take up varying amounts of slots based on their potency."]],
+    ['Durability', ["<strong>Armour</strong> - 200 points per AC provided (above 10) - can be fully repaired with proper tools/station and materials. Otherwise can be repaired to 75% out in the field with appropriate tools and materials. When using a shield you may choose to take the durability damage to either your shield or armour.", "<strong>Weapons</strong> - Weapons will always have a condition status which will be changed based on circumstances of their use, or lack there of. Magic items will be effected differently based on their potency."]],
+];
+
+accordionCreator(rules);
+accordionListener();

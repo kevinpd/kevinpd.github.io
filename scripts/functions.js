@@ -205,19 +205,47 @@ function fieldsetSelect(input, max, notifMessage, notifStatus, isClass = false) 
     });
 };
 
-// Whenever Accordions are used
-let accordion = document.querySelectorAll('.accordion');
-if (accordion) {
-    accordion.forEach(function(e) {
-        e.addEventListener("click", function() {
-            if (e.classList.contains("open")) {
-                e.classList.remove("open");
-                e.querySelector(".body").style.maxHeight = null;
-            } else {
-                e.classList.add("open");
-                e.querySelector(".body").style.maxHeight = e.querySelector(".body").scrollHeight + 30 + "px";
-                console.log(e.querySelector(".body"));
-            }
-        });
+// Accordion Creator
+function accordionCreator(array, outputTo = document.querySelector(".container")) {
+    array.forEach(function(e) {
+        if (outputTo) {
+            let container = document.createElement("div");
+            container.setAttribute("class", 'accordion');
+            let title = document.createElement("h2");
+            title.setAttribute("class", 'title');
+            let button = document.createElement("button");
+            button.innerText = e[0];
+            title.appendChild(button);
+            container.appendChild(title);
+
+            let body = document.createElement("div");
+            body.setAttribute("class", 'body');
+            e[1].forEach(function(b) {
+                let para = document.createElement("p");
+                para.innerHTML = b;
+                body.appendChild(para);
+            });
+            container.appendChild(body);
+            outputTo.appendChild(container);
+        }
     });
+}
+
+// Whenever Accordions are used
+function accordionListener() {
+    let accordion = document.querySelectorAll('.accordion');
+    if (accordion) {
+        accordion.forEach(function(e) {
+            e.addEventListener("click", function() {
+                if (e.classList.contains("open")) {
+                    e.classList.remove("open");
+                    e.querySelector(".body").style.maxHeight = null;
+                } else {
+                    e.classList.add("open");
+                    e.querySelector(".body").style.maxHeight = e.querySelector(".body").scrollHeight + 30 + "px";
+                    console.log(e.querySelector(".body"));
+                }
+            });
+        });
+    }
 }
