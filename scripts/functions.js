@@ -215,7 +215,8 @@ if (accordion) {
                 e.querySelector(".body").style.maxHeight = null;
             } else {
                 e.classList.add("open");
-                e.querySelector(".body").style.maxHeight = e.scrollHeight + "px";
+                e.querySelector(".body").style.maxHeight = e.querySelector(".body").scrollHeight + 30 + "px";
+                console.log(e.querySelector(".body"));
             }
         });
     });
