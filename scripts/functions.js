@@ -204,3 +204,19 @@ function fieldsetSelect(input, max, notifMessage, notifStatus, isClass = false) 
         });
     });
 };
+
+// Whenever Accordions are used
+let accordion = document.querySelectorAll('.accordion');
+if (accordion) {
+    accordion.forEach(function(e) {
+        e.addEventListener("click", function() {
+            if (e.classList.contains("open")) {
+                e.classList.remove("open");
+                e.querySelector(".body").style.maxHeight = null;
+            } else {
+                e.classList.add("open");
+                e.querySelector(".body").style.maxHeight = e.scrollHeight + "px";
+            }
+        });
+    });
+}

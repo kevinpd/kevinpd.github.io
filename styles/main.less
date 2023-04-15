@@ -13,6 +13,17 @@
 
 @notification_bg: rgba(255, 255, 255, 0.95);
 
+@accordion_bg: rgba(250, 231, 248, 0.4);
+@accordion_border: rgb(250, 231, 248);
+@accordion_title: @text_col;
+@accordion_shadow: 0 0 10px 0 transparent;
+@accordion_hover_shadow: 0 0 10px 0 rgba(17,17,17,0.4);
+@accordion_open_bg: rgba(54, 202, 202, 1);
+@accordion_open_border: @accordion_open_bg;
+@accordion_open_title: @text_col;
+@accordion_body_bg: rgba(250, 231, 248, 0.4);
+@accordion_body_border: rgb(250, 231, 248);
+
 @thumbnail_grid_bg: rgba(250, 231, 248, 0.4);
 @thumbnail_grid_border: rgb(250, 231, 248);
 @thumbnail_grid_shadow: 0 0 10px 0 transparent;
@@ -73,6 +84,7 @@ body {
     }
     p, a, ul, li, span {
         .fontSize(20);
+        margin: 0;
     }
     h1 {.fontSize(52)}
     h2 {.fontSize(42)}
@@ -141,6 +153,65 @@ footer {
     &.hidden {
         transform: translateY(-100%);
         opacity: 0;
+    }
+}
+
+.accordion {
+    .title {
+        margin: 0;
+        > button {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 8px 18px;
+            background-color: @accordion_bg;
+            border: 2px solid @accordion_border;
+            border-radius: 8px;
+            color: @accordion_title;
+            box-shadow: @accordion_shadow;
+            .fontSize(24);
+            text-align: left;
+            .transition();
+            &::after {
+                content: '\f358';
+                font-family: "Font Awesome 6 free";
+                .fontSize(28);
+                position: absolute;
+                top: 50%;
+                right: 4px;
+                translate: -50% -50%;
+                .transition();
+            }
+            &:hover, &:focus, &:active {
+                box-shadow: @accordion_hover_shadow;
+                transform: scale(1.005);
+                cursor: pointer;
+            }
+        }
+    }
+    .body {
+        max-height: 0;
+        overflow: hidden;
+        .transition();
+    }
+    &.open {
+        .title {
+            > button {
+                background-color: @accordion_open_bg;
+                border-color: @accordion_border;
+                border-radius: 8px 8px 0 0;
+                &::after {
+                    rotate: 180deg;
+                }
+            }
+        }
+        .body {
+            padding: 15px 20px;
+            border-top: 0;
+            border-radius: 0 0 8px 8px;
+            background-color: @accordion_body_bg;
+            border: 2px solid @accordion_body_border;
+        }
     }
 }
 
