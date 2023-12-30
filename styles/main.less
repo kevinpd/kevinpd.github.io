@@ -13,6 +13,9 @@
 
 @notification_bg: rgba(255, 255, 255, 0.95);
 
+@btn_bg: rgba(54, 202, 202, 0.4);
+@btn_border: rgb(54, 202, 202);
+
 @accordion_bg: rgba(250, 231, 248, 0.4);
 @accordion_border: rgb(250, 231, 248);
 @accordion_title: @text_col;
@@ -156,6 +159,17 @@ footer {
     }
 }
 
+.btn {
+    padding: 8px 12px;
+    .fontSize(22);
+    &.arrow-left,
+    &.arrow-right {
+        content: '\f0a9';
+        font-family: "Font Awesome 6 free";
+        .fontSize(28);
+    }
+}
+
 .accordion {
     margin: 0 0 20px;
     .title {
@@ -208,10 +222,10 @@ footer {
         }
         .body {
             padding: 15px 20px;
-            border-top: 0;
-            border-radius: 0 0 8px 8px;
             background-color: @accordion_body_bg;
             border: 2px solid @accordion_body_border;
+            border-top: 0;
+            border-radius: 0 0 8px 8px;
         }
     }
 }
