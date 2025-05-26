@@ -1,0 +1,84 @@
+// Colours
+$black: #000;
+$white: #FFF;
+$text-col: #111111;
+$purple: #754fb1;
+$pink: #b14f9c;
+$blue: #4f8ab1;
+$body-font: 'Open Sans', sans-serif;
+
+// Mixins
+@mixin font-size($size) {
+    font-size: ($size * 0.16) + rem;
+}
+
+// Styles
+body {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    min-height: 100vh;
+    color: $text-col;
+    background: radial-gradient(circle at 10% 10%, $pink 0, transparent 75%);
+    font-family: $body-font;
+    font-size: 16px;
+    z-index: 0;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: radial-gradient(circle at 90% 45%, $purple 0, transparent 75%);
+        z-index: -1;
+    }
+    &::after {
+        background: radial-gradient(circle at -10% 120%, $blue 0, transparent 75%);
+    }
+}
+
+.container {
+    max-width: 900px;
+    padding: 25px;
+    background-color: rgba($white, 0.65);
+    border-radius: 10px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0 0 25px;
+    }
+}
+
+iframe {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nav-btns {
+    color: $white;
+    background-color: $purple;
+    font-family: $body-font;
+    @include font-size(22);
+    &.hidden {
+        display: none;
+    }
+}
+
+.form {
+    .form-group {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}

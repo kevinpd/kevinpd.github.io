@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="head">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkatra">
-    <title>Homepage || DnD</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <title>Wedding RSVP</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="page-title">JustKevbo's personal shit</h1>
-        </div>
-    </header>
+    <div class="container">
+        <h1 class="page-title">Wedding RSVP</h1>
+        <h2 class="form-header">Kevin & Maria<span> are hoping we would have the honour of having you at our wedding.</span></h2>
+        <form action="https://fabform.io/f/ONkJ2Ad" class="form">
+            <div class="form-group name">
+                <label for="name" class="form-label">Name(s)</label>
+                <input type="text" id="name" class="form-control" readonly>
+            </div>
 
-    <main>
-        <div class="container">
-            <ul class="thumbnail-grid">
-                <li class="grid-entry">
-                    <a href="pages/terruncina.html">
-                        <i class="fa-brands fa-d-and-d"></i>
-                        Ter-return-cina
-                    </a>
-                </li>
-                <li class="grid-entry">
-                    <a href="pages/other.html">
-                        <i class="fa-sharp fa-solid fa-scroll"></i>
-                        Other projects
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </main>
+            <div class="form-group when-where start">
+                <h3>When and where?</h3>
+                <p>When: Tuesday 9th June 2026, at 11:00am</p>
+                <p>Where: <a href="https://www.peakvenues.co.uk/venues/8/oak-tree-farm#gallery">Oak Tree Farm</a>, Longnor, Nr Buxton, Derbyshire. SK17 0QS</p>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d597.8111450557336!2d-1.908523389890804!3d53.17759234242912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1748249382325!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
 
-    <footer>
-        <div class="container">
-            <p>Created by JustKevbo</p>
-        </div>
-    </footer>
+            <div class="form-group details">
+                <h3>The details</h3>
+                <div class="rules">
+                    <h4>Rules</h4>
+                    <ul>
+                        <li>Dress code - Formal wear</li>
+                        <li>No children</li>
+                        <li>No smoking or vaping allowed in the property</li>
+                    </ul>
+                    <h4>Parking</h4>
+                    <p>There is on-site parking with up to 20 cars.</p>
+                    <h4>Accomodation</h4>
+                    <p class="accomodation-text">Accomodation will be provided from Monday 8th - Wednesday 10th June 2026.</p>
+                    <span class="notice">Accomodation will be provided (for free).</span>
+                </div>
+            </div>
 
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/5dac6dcd63.js" crossorigin="anonymous"></script>
-    <script src="/scripts/functions.js"></script>
-    <script src="/scripts/main.js"></script>
+            <div class="form-group rsvp">
+                <fieldset class="field">
+                    <legend class="form-legend">RSVP - Will you be coming?</legend>
+
+                    <input type="radio" name="rsvp" id="yes">
+                    <label for="yes" value="yes">Yes</label>
+                    
+                    <input type="radio" name="rsvp" id="no">
+                    <label for="no" value="no">No</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group other">
+                <label class="form-label" for="dietary">Dietary requirements?</label>
+                <textarea name="dietary" id="dietary"></textarea>
+            </div>
+
+            <button type="button" class="nav-btns back hidden">Back</button>
+            <button type="button" class="nav-btns next">Next</button>
+            <button type="submit" class="nav-btns submit hidden">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
