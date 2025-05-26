@@ -9,7 +9,7 @@ $body-font: 'Open Sans', sans-serif;
 
 // Mixins
 @mixin font-size($size) {
-    font-size: ($size * 0.16) + rem;
+    font-size: ($size * 0.0625) + rem;
 }
 
 // Styles
@@ -54,7 +54,15 @@ body {
     h4,
     h5,
     h6 {
-        margin: 0 0 25px;
+        margin: 0 0 20px;
+        + p, + ul, + ol {
+            margin-top: -5px;
+        }
+    }
+    p,
+    ul,
+    ol {
+        margin: 0 0 20px;
     }
 }
 
@@ -73,9 +81,24 @@ iframe {
         display: none;
     }
 }
+.nav-btn-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
+    &.hidden {
+        display: none;
+    }
+}
 
 .form {
     .form-group {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    .more-info {
         display: none;
         &.active {
             display: block;

@@ -17,12 +17,13 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="page-title">Wedding RSVP</h1>
-        <h2 class="form-header">Kevin & Maria<span> are hoping we would have the honour of having you at our wedding.</span></h2>
+        <div class="form-upper">
+            <h1 class="page-title">Wedding RSVP</h1>
+            <h2 class="form-header">Kevin & Maria<span><br />are hoping to have the honour of your attendance at their wedding.</span></h2>
+        </div>
         <form action="https://fabform.io/f/ONkJ2Ad" method="post" class="form">
             <div class="form-group name">
-                <label for="name" class="form-label">Name(s)</label>
-                <input type="text" id="name" class="form-control" readonly>
+                <input type="text" name="name" id="name" class="form-control" readonly hidden>
             </div>
 
             <div class="form-group when-where start">
@@ -30,8 +31,14 @@
                 <p>When: Tuesday 9th June 2026, at 11:00am</p>
                 <p>Where: <a href="https://www.peakvenues.co.uk/venues/8/oak-tree-farm#gallery">Oak Tree Farm</a>, Longnor, Nr Buxton, Derbyshire. SK17 0QS</p>
                 <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d597.8111450557336!2d-1.908523389890804!3d53.17759234242912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1748249382325!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d805.6453822080912!2d-1.909234071419948!3d53.17751480203263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDEwJzM5LjEiTiAxwrA1NCczMC45Ilc!5e1!3m2!1sen!2suk!4v1748263160808!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <button type="button" class="more-info-btn">More information</button>
+            </div>
+
+            <div class="more-info">
+                <h3>More information</h3>
+                <button type="button" class="more-info-back">Back</button>
             </div>
 
             <div class="form-group details">
@@ -68,9 +75,11 @@
                 <textarea name="dietary" id="dietary"></textarea>
             </div>
 
-            <button type="button" class="nav-btns back hidden">Back</button>
-            <button type="button" class="nav-btns next">Next</button>
-            <button type="submit" class="nav-btns submit hidden">Submit</button>
+            <div class="nav-btn-wrapper">
+                <button type="submit" class="nav-btns submit hidden">Submit</button>
+                <button type="button" class="nav-btns next">Next</button>
+                <button type="button" class="nav-btns back hidden">Back</button>
+            </div>
         </form>
     </div>
 
