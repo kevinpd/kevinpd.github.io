@@ -18,6 +18,17 @@ const guestList = [
     'Tara',
 ];
 
+const friendsList = [
+    'Abid',
+    'Ben',
+    'Greg',
+    'George%20&%20Lydia',
+    'Meg',
+    'Sam',
+    'Tom',
+    'Tara',
+]
+
 const form = document.querySelector('.form');
 const formGroups = document.querySelectorAll('.form-group');
 const navBack = document.querySelector('.nav-btns.back');
@@ -30,6 +41,9 @@ if (!(nameUrl && guestList.includes(nameUrl))) {
     hasName = false;
 } else {
     hasName = true;
+    if (friendsList.includes(nameUrl)) {
+        document.querySelector('.accomodation-text').innerHTML = 'Monday 8th - Friday 12th';
+    }
 }
 
 function showFirst() {
