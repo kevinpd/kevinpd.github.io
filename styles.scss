@@ -1,19 +1,35 @@
 // Colours
 $black: #000;
 $white: #FFF;
-$text-col: #111111;
+$text-col: #69622c;
 $purple: #754fb1;
 $pink: #b14f9c;
 $blue: #4f8ab1;
-$body-font: 'Open Sans', sans-serif;
+$body-font: "Cormorant Garamond", serif;
+$bg-beige: #f6f4f0;
 
 // Mixins
 @mixin font-size($size) {
     font-size: ($size * 0.0625) + rem;
 }
 
-// Styles
-body {
+@font-face {
+    font-family: "Signature";
+    font-display: auto;
+    src: url("/fonts/Centralwell.ttf");
+}
+
+html {
+    background-color: $bg-beige;
+}
+
+hr {
+    border-color: $text-col;
+    border-bottom: 0;
+    margin: 15px 0 45px;
+}
+
+.wrapper {
     position: relative;
     box-sizing: border-box;
     display: flex;
@@ -22,38 +38,82 @@ body {
     margin: 0;
     padding: 15px;
     min-height: 100vh;
-    color: $text-col;
-    background: radial-gradient(circle at 10% 10%, $pink 0, transparent 75%);
-    font-family: $body-font;
-    font-size: 16px;
     z-index: 0;
-    &::before,
-    &::after {
+    &::before {
         content: '';
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background: radial-gradient(circle at 90% 45%, $purple 0, transparent 75%);
+        background: url('/assets/bg-texture.png') center/contain repeat;
+        opacity: 0.3;
+        z-index: -1;
+    }
+}
+
+// Styles
+body {
+    position: relative;
+    margin: 0;
+    color: $text-col;
+    font-family: $body-font;
+    font-size: 16px;
+    z-index: 0;
+    background: url('/assets/bg-graphic-bottom.png') center bottom/13vw no-repeat;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        background: url('/assets/bg-graphic-sides.png') left bottom/contain no-repeat;
         z-index: -1;
     }
     &::after {
-        background: radial-gradient(circle at -10% 120%, $blue 0, transparent 75%);
+        left: unset;
+        right: 0;
+        transform: scaleX(-1);
+    }
+
+    @media all and (min-width: 600.98px) {
+        &::before,
+        &::after {
+            height: 100vh;
+        }
     }
 }
 
 .container {
     max-width: 900px;
     padding: 25px;
-    background-color: rgba($white, 0.65);
+    background-color: rgba($white, 0.35);
     border-radius: 10px;
+    text-align: center;
+
+    .signature {
+        font-family: "Signature", serif;
+        font-weight: 400;
+        @include font-size(66);
+        color: $black;
+    }
+
+    h1 {@include font-size(40);}
+    h2 {@include font-size(32);}
+    h3 {@include font-size(26);}
+    h4 {@include font-size(24);}
+    h5 {@include font-size(22);}
+    h6 {@include font-size(20);}
+
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
+        font-weight: 500;
         margin: 0 0 20px;
         + p, + ul, + ol {
             margin-top: -5px;
@@ -62,7 +122,50 @@ body {
     p,
     ul,
     ol {
+        @include font-size(18);
+        font-weight: 300;
         margin: 0 0 20px;
+    }
+
+    @media all and (min-width: 768px) {
+        h1 {@include font-size(46);}
+        h2 {@include font-size(38);}
+        h3 {@include font-size(34);}
+        h4 {@include font-size(30);}
+        h5 {@include font-size(26);}
+        h6 {@include font-size(24);}
+      
+        p,
+        ul,
+        ol {
+            @include font-size(20);
+        }
+    }
+    @media all and (min-width: 992px) {
+        h1 {@include font-size(50);}
+        h2 {@include font-size(42);}
+        h3 {@include font-size(36);}
+        h4 {@include font-size(32);}
+        h5 {@include font-size(28);}
+        h6 {@include font-size(26);}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0 0 25px;
+            + p, + ul, + ol {
+                margin-top: -10px;
+            }
+        }
+        p,
+        ul,
+        ol {
+            @include font-size(22);
+            margin: 0 0 25px;
+        }
     }
 }
 
@@ -72,7 +175,7 @@ iframe {
     overflow: hidden;
 }
 
-.nav-btns {
+.btns {
     color: $white;
     background-color: $purple;
     font-family: $body-font;
@@ -88,6 +191,14 @@ iframe {
     margin-top: 30px;
     &.hidden {
         display: none;
+    }
+}
+
+.page-title {
+    text-align: center;
+    img {
+        width: 50px;
+        margin-right: -10px;
     }
 }
 

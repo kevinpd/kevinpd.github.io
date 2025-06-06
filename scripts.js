@@ -37,14 +37,37 @@ const navSubmit = document.querySelector('.nav-btns.submit');
 const nameUrl = document.URL.split('#')[1];
 let hasName = false;
 
-if (!(nameUrl && guestList.includes(nameUrl))) {
-    hasName = false;
-} else {
+if (nameUrl && guestList.includes(nameUrl)) {
     hasName = true;
+    // const pageTitle = document.querySelector('.page-title');
+    // pageTitle.innerHTML = pageTitle.innerHTML + ' (' + nameUrl + ')';
     if (friendsList.includes(nameUrl)) {
         document.querySelector('.accomodation-text').innerHTML = 'Monday 8th - Friday 12th';
     }
 }
+
+/* Match Height and Width */
+// Find tallest and widest container will be
+// let width = 0, height = 0;
+// formGroups.forEach(function(e) {
+//     e.classList.add('active');
+//     const elWidth = e.offsetWidth;
+//     const elHeight = e.offsetHeight;
+//     if (width < elWidth || height < elHeight) {
+//         if (width < elWidth) {
+//             width = elWidth;
+//         }
+//         if (height < elHeight) {
+//             height = elHeight;
+//         }
+//     }
+//     e.classList.remove('active');
+// });
+
+// formGroups.forEach(function(e) {
+//     e.style.minHeight = height + 'px';
+//     e.style.minWidth = width + 'px';
+// })
 
 function showFirst() {
     formGroups.forEach(function(e, i) {
@@ -71,6 +94,7 @@ function showGroup(num, isLast) {
         navNext.classList.remove('hidden');
         navSubmit.classList.add('hidden');
     }
+    window.scrollTo(0, 0);
 }
 
 function navBtn(next = true) {

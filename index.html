@@ -10,77 +10,88 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     
     <title>Wedding RSVP</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form-upper">
-            <h1 class="page-title">Wedding RSVP</h1>
-            <h2 class="form-header">Kevin & Maria<span><br />are hoping to have the honour of your attendance at their wedding.</span></h2>
+    <div class="wrapper">
+        <div class="container">
+            <div class="form-upper">
+                <h1 class="page-title">K <img src="/assets/header-graphic.png" alt="&"> M</h1>
+                <hr>
+            </div>
+            <form action="https://fabform.io/f/ONkJ2Ad" method="post" class="form">
+                <div class="form-group name">
+                    <input type="text" name="name" id="name" class="form-control" readonly hidden>
+                </div>
+                
+                <div class="form-group when-where start">
+                    <p>KINDLY JOIN US<br/>FOR THE WEDDING OF</p>
+                    <h2 class="form-header">KEVIN<br/><span class="signature">and</span><br/>MARIA<span></h2>
+                    <p>Tuesday 9<sup>th</sup> June 2026 | at 1:00pm</p>
+                    <p>Oak tree farm, Longnor, Nr Buxton, Derbyshire. SK17 0QS</p>
+                </div>
+
+                <div class="form-group details">
+                    <h3>The details</h3>
+                    <div class="map-wrapper">
+                        <h4>Location</h4>
+                        <p><a href="https://www.peakvenues.co.uk/venues/8/oak-tree-farm#gallery">OAK TREE FARM</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d805.6453822080912!2d-1.909234071419948!3d53.17751480203263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDEwJzM5LjEiTiAxwrA1NCczMC45Ilc!5e1!3m2!1sen!2suk!4v1748263160808!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="rules">
+                        <h4>Rules</h4>
+                        <ul>
+                            <li>Dress code - Formal wear</li>
+                            <li>No children</li>
+                            <li>No smoking or vaping allowed in the property</li>
+                        </ul>
+                        <h4>Parking</h4>
+                        <p>There is on-site parking with up to 20 cars.</p>
+                        <h4>Accomodation</h4>
+                        <p>Accomodation will be provided from <span class="accomodation-text">Monday 8th - Wednesday 10th</span> June 2026.</p>
+                        <span class="notice">Accomodation will be provided (for free).</span>
+                    </div>
+                    <button type="button" class="btns more-info-btn">More information</button>
+                </div>
+
+                <div class="more-info">
+                    <h3>More information</h3>
+                    <button type="button" class="btns more-info-back">Back</button>
+                </div>
+
+                <div class="form-group questions">
+                    <fieldset class="field">
+                        <legend class="form-legend">RSVP - Will you be coming?</legend>
+
+                        <input type="radio" name="rsvp" id="yes">
+                        <label for="yes" value="yes">Yes</label>
+                        
+                        <input type="radio" name="rsvp" id="no">
+                        <label for="no" value="no">No</label>
+                    </fieldset>
+                    <fieldset class="field">
+                        <legend class="form-legend">Accomodation - Will you be staying with us?</legend>
+
+                        <input type="radio" name="staying" id="yes">
+                        <label for="yes" value="yes">Yes</label>
+                        
+                        <input type="radio" name="staying" id="no">
+                        <label for="no" value="no">No</label>
+                    </fieldset>
+                    <label class="form-label" for="dietary">Dietary requirements?</label>
+                    <textarea name="dietary" id="dietary"></textarea>
+                </div>
+
+                <div class="nav-btn-wrapper">
+                    <button type="submit" class="btns nav-btns submit hidden">Submit</button>
+                    <button type="button" class="btns nav-btns next">Next</button>
+                    <button type="button" class="btns nav-btns back hidden">Back</button>
+                </div>
+            </form>
         </div>
-        <form action="https://fabform.io/f/ONkJ2Ad" method="post" class="form">
-            <div class="form-group name">
-                <input type="text" name="name" id="name" class="form-control" readonly hidden>
-            </div>
-
-            <div class="form-group when-where start">
-                <h3>When and where?</h3>
-                <p>When: Tuesday 9th June 2026, at 11:00am</p>
-                <p>Where: <a href="https://www.peakvenues.co.uk/venues/8/oak-tree-farm#gallery">Oak Tree Farm</a>, Longnor, Nr Buxton, Derbyshire. SK17 0QS</p>
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d805.6453822080912!2d-1.909234071419948!3d53.17751480203263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDEwJzM5LjEiTiAxwrA1NCczMC45Ilc!5e1!3m2!1sen!2suk!4v1748263160808!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <button type="button" class="more-info-btn">More information</button>
-            </div>
-
-            <div class="more-info">
-                <h3>More information</h3>
-                <button type="button" class="more-info-back">Back</button>
-            </div>
-
-            <div class="form-group details">
-                <h3>The details</h3>
-                <div class="rules">
-                    <h4>Rules</h4>
-                    <ul>
-                        <li>Dress code - Formal wear</li>
-                        <li>No children</li>
-                        <li>No smoking or vaping allowed in the property</li>
-                    </ul>
-                    <h4>Parking</h4>
-                    <p>There is on-site parking with up to 20 cars.</p>
-                    <h4>Accomodation</h4>
-                    <p>Accomodation will be provided from <span class="accomodation-text">Monday 8th - Wednesday 10th</span> June 2026.</p>
-                    <span class="notice">Accomodation will be provided (for free).</span>
-                </div>
-            </div>
-
-            <div class="form-group rsvp">
-                <fieldset class="field">
-                    <legend class="form-legend">RSVP - Will you be coming?</legend>
-
-                    <input type="radio" name="rsvp" id="yes">
-                    <label for="yes" value="yes">Yes</label>
-                    
-                    <input type="radio" name="rsvp" id="no">
-                    <label for="no" value="no">No</label>
-                </fieldset>
-            </div>
-
-            <div class="form-group other">
-                <label class="form-label" for="dietary">Dietary requirements?</label>
-                <textarea name="dietary" id="dietary"></textarea>
-            </div>
-
-            <div class="nav-btn-wrapper">
-                <button type="submit" class="nav-btns submit hidden">Submit</button>
-                <button type="button" class="nav-btns next">Next</button>
-                <button type="button" class="nav-btns back hidden">Back</button>
-            </div>
-        </form>
     </div>
 
     <script src="scripts.js"></script>
