@@ -176,6 +176,11 @@ body {
         font-weight: 300;
         margin: 0 0 20px;
     }
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+    }
     a {
         color: $link-col;
         text-decoration: underline;
