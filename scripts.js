@@ -39,8 +39,6 @@ let hasName = false;
 
 if (nameUrl && guestList.includes(nameUrl)) {
     hasName = true;
-    // const pageTitle = document.querySelector('.page-title');
-    // pageTitle.innerHTML = pageTitle.innerHTML + ' (' + nameUrl + ')';
     if (friendsList.includes(nameUrl)) {
         document.querySelector('.accomodation-text').innerHTML = 'Monday 8th - Friday 12th';
     }
@@ -143,7 +141,7 @@ moreInfoBack.addEventListener('click', function() {
     navBtnWrapper.classList.remove('hidden');
     formGroups.forEach(function(e) {
         e.classList.remove('active');
-        if (e.classList.contains('start')) {
+        if (e.classList.contains('details')) {
             e.classList.add('active');
         }
     });

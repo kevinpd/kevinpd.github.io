@@ -2,11 +2,15 @@
 $black: #000;
 $white: #FFF;
 $text-col: #69622c;
-$purple: #754fb1;
-$pink: #b14f9c;
-$blue: #4f8ab1;
 $body-font: "Cormorant Garamond", serif;
 $bg-beige: #f6f4f0;
+$link-col: #7a5c32;
+$link-hover: #5a4323;
+
+$btn-bg: #d6d2c4;
+$btn-text: #4b3e2b;
+$btn-border: #b5ac94;
+$btn-hover: #eae6db;
 
 // Mixins
 @mixin font-size($size) {
@@ -60,7 +64,7 @@ body {
     font-family: $body-font;
     font-size: 16px;
     z-index: 0;
-    background: url('/assets/bg-graphic-bottom.png') center bottom/13vw no-repeat;
+    background: url('/assets/bg-graphic-bottom.png') center bottom/15vw no-repeat;
     &::before,
     &::after {
         content: '';
@@ -68,7 +72,7 @@ body {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 50vh;
+        height: 70vh;
         background: url('/assets/bg-graphic-sides.png') left bottom/contain no-repeat;
         z-index: -1;
     }
@@ -79,6 +83,7 @@ body {
     }
 
     @media all and (min-width: 600.98px) {
+        background-size: 13vw;
         &::before,
         &::after {
             height: 100vh;
@@ -102,10 +107,10 @@ body {
 
     h1 {@include font-size(40);}
     h2 {@include font-size(32);}
-    h3 {@include font-size(26);}
-    h4 {@include font-size(24);}
-    h5 {@include font-size(22);}
-    h6 {@include font-size(20);}
+    h3 {@include font-size(24);}
+    h4 {@include font-size(22);}
+    h5 {@include font-size(20);}
+    h6 {@include font-size(18);}
 
     h1,
     h2,
@@ -126,14 +131,30 @@ body {
         font-weight: 300;
         margin: 0 0 20px;
     }
+    a {
+        color: $link-col;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 1px;
+        transition: all ease-in-out 300ms;
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            color: $link-hover;
+        }
+    }
+    .notice {
+        font-size: 85%;
+    }
 
     @media all and (min-width: 768px) {
         h1 {@include font-size(46);}
         h2 {@include font-size(38);}
-        h3 {@include font-size(34);}
-        h4 {@include font-size(30);}
-        h5 {@include font-size(26);}
-        h6 {@include font-size(24);}
+        h3 {@include font-size(28);}
+        h4 {@include font-size(24);}
+        h5 {@include font-size(22);}
+        h6 {@include font-size(20);}
       
         p,
         ul,
@@ -142,12 +163,12 @@ body {
         }
     }
     @media all and (min-width: 992px) {
-        h1 {@include font-size(50);}
+        h1 {@include font-size(52);}
         h2 {@include font-size(42);}
-        h3 {@include font-size(36);}
-        h4 {@include font-size(32);}
-        h5 {@include font-size(28);}
-        h6 {@include font-size(26);}
+        h3 {@include font-size(30);}
+        h4 {@include font-size(26);}
+        h5 {@include font-size(24);}
+        h6 {@include font-size(22);}
 
         h1,
         h2,
@@ -176,12 +197,25 @@ iframe {
 }
 
 .btns {
-    color: $white;
-    background-color: $purple;
+    color: $btn-text;
+    background-color: $btn-bg;
+    border: 1px solid $btn-border;
     font-family: $body-font;
     @include font-size(22);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
     &.hidden {
         display: none;
+    }
+    &.skinny {
+        padding: 6px 20px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+        background-color: $btn-hover;
     }
 }
 .nav-btn-wrapper {
