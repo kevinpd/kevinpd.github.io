@@ -304,16 +304,21 @@ iframe {
 .form {
     fieldset {
         border: 1px solid $text-col;
+        border-radius: 5px;
     }
     .field {
         &.flex-col {
             display: flex;
             flex-direction: column;
             textarea {
-                width: 100%;
+                width: auto;
                 min-height: 100px;
+                margin-top: 7px;
+                background-color: rgba(255,255,255,0);
                 @include font-size(20);
                 font-family: $body-font;
+                border: 1px solid $text-col;
+                border-radius: 5px;
             }
         }
         legend,
