@@ -37,7 +37,7 @@
                 <div class="form-group details">
                     <h2>DETAILS</h2>
                     <h3>LOCATION</h3>
-                    <p><a href="https://www.peakvenues.co.uk/venues/8/oak-tree-farm#gallery">Visit the Oak tree farm website here</a></p>
+                    <p><a href="https://www.peakvenues.co.uk/venues/8/oak-tree-farm#gallery" title="Oak Tree Farm | Peak Venues">Visit the Oak tree farm website here</a> | <a href="https://maps.app.goo.gl/RpcMqyY1FBX1duHB6" title="Oak Tree Farm | Google maps">View on Google Maps</a></p>
                     <div class="rules">
                         <h3>RULES</h3>
                         <ul>
@@ -56,33 +56,65 @@
 
                 <div class="more-info">
                     <h2>More information</h2>
-                    <div class="map-wrapper">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d805.6453822080912!2d-1.909234071419948!3d53.17751480203263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTPCsDEwJzM5LjEiTiAxwrA1NCczMC45Ilc!5e1!3m2!1sen!2suk!4v1748263160808!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    <h3>When is the RSVP deadline?</h3>
+                    <p>Monday 2<sup>nd</sup> March 2026</p>
+                    <h3>What should I wear?</h3>
+                    <p>
+                        <ul>Wedding attire - Formal wear</ul>
+                        <ul>Evening attire - Casual/Formal wear</ul>
+                    </p>
+                    <h3>Will the wedding be indoors or outdoors?</h3>
+                    <p>The wedding will be held outside.</p>
+                    <h3>How do I get to and from the wedding venue?</h3>
+                    <p>We will not be providing any services to getting to the venue unfortunately. It is in the middle of the Peak District, so transport is sparse.</p>
+                    <h3>Can I bring a plus-one?</h3>
+                    <p>There will be no plus-ones* allowed. <br/><span class="notice">* Plus-ones are defined as anyone who has not been formally invited to the wedding.</span></p>
+                    <h3>What if I have food allergies or dietary restrictions?</h3>
+                    <p>During your RSVP, you can fill in the Dietary restrictions field.</p>
+                    <h3>What shoes are appropriate?</h3>
+                    <p>The wedding will be held on well-kept grass and so heels should be fine, depending on their width.</p>
+                    <h3>How early can I arrive to the venue?</h3>
+                    <p>The venue and accomodation is booked from Monday 8th June 2026, 8:00pm. So feel free to come as early as that if needed.</p>
+                    <h3>Will there be an open bar?</h3>
+                    <p>We will be providing an array of different drinks however if there is a specific drink you would like, you're welcome to bring it.</p>
+                    <h3>Where do I park the car if driving?</h3>
+                    <p>The property has enough room for around 20 or so cars assuming they are parked behind one another.</p>
+                    <h3>Can I take pictures with my phone?</h3>
+                    <p>Not during the ceremony, we ask that you refrain from doing so during the ceremony itself but welcome it for any other times.</p>
+                    <h3>Wedding gifts?</h3>
+                    <p>We do not expect anyone to come with gifts, as your attendance is gift enough.</p>
+                    <h3>Why aren't children allowed?</h3>
+                    <p>It is not a suitable event for children and they are often very rowdy, do not enjoy weddings.<br/>There are no exceptions to this rule.</p>
+
+                    <h3>My question isn't here?</h3>
+                    <p>Feel free to contact us if there are any questions that has not been listed.</p>
+                    
                     <button type="button" class="btns more-info-back">Back</button>
                 </div>
 
                 <div class="form-group questions">
-                    <fieldset class="field">
+                    <fieldset class="fieldset field">
                         <legend class="form-legend">RSVP - Will you be coming?</legend>
 
-                        <input type="radio" name="rsvp" id="yes">
-                        <label for="yes" value="yes">Yes</label>
+                        <input type="radio" name="rsvp" id="rsvp-yes" required>
+                        <label for="rsvp-yes" value="yes">Yes</label>
                         
-                        <input type="radio" name="rsvp" id="no">
-                        <label for="no" value="no">No</label>
+                        <input type="radio" name="rsvp" id="rsvp-no" required>
+                        <label for="rsvp-no" value="no">No</label>
                     </fieldset>
-                    <fieldset class="field">
+                    <fieldset class="fieldset field">
                         <legend class="form-legend">Accomodation - Will you be staying with us?</legend>
 
-                        <input type="radio" name="staying" id="yes">
-                        <label for="yes" value="yes">Yes</label>
+                        <input type="radio" name="staying" id="staying-yes" required>
+                        <label for="staying-yes" value="yes">Yes</label>
                         
-                        <input type="radio" name="staying" id="no">
-                        <label for="no" value="no">No</label>
+                        <input type="radio" name="staying" id="staying-no" required>
+                        <label for="staying-no" value="no">No</label>
                     </fieldset>
-                    <label class="form-label" for="dietary">Dietary requirements?</label>
-                    <textarea name="dietary" id="dietary"></textarea>
+                    <div class="field flex-col">
+                        <label class="form-label" for="dietary">Dietary requirements?</label>
+                        <textarea name="dietary" id="dietary"></textarea>
+                    </div>
                 </div>
 
                 <div class="nav-btn-wrapper">

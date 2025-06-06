@@ -302,6 +302,46 @@ iframe {
 }
 
 .form {
+    fieldset {
+        border: 1px solid $text-col;
+    }
+    .field {
+        &.flex-col {
+            display: flex;
+            flex-direction: column;
+            textarea {
+                width: 100%;
+                min-height: 100px;
+                @include font-size(20);
+                font-family: $body-font;
+            }
+        }
+        legend,
+        label {
+            @include font-size(18);
+            + input[type=radio] {
+                margin-left: 20px;
+            }
+        }
+        + .field {
+            margin-top: 15px;
+        }
+        @media all and (min-width: 768px) {
+            legend,
+            label {
+                @include font-size(20);
+            }
+            + .field {
+                margin-top: 20px;
+            }
+        }
+        @media all and (min-width: 992px) {
+            legend,
+            label {
+                @include font-size(22);
+            }
+        }
+    }
     .form-group {
         display: none;
         &.active {
