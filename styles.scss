@@ -3,6 +3,7 @@ $black: #000;
 $white: #FFF;
 $text-col: #69622c;
 $body-font: "Cormorant Garamond", serif;
+$signature: "Signature", serif;
 $bg-beige: #f6f4f0;
 $link-col: #7a5c32;
 $link-hover: #5a4323;
@@ -139,7 +140,7 @@ body {
     text-align: center;
 
     .signature {
-        font-family: "Signature", serif;
+        font-family: $signature;
         font-weight: 400;
         @include font-size(66);
         color: $black;

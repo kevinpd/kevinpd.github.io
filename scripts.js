@@ -4,10 +4,10 @@ const guestList = [
     'Jack',
     'Liuli%20&%20Bethany',
     'Xiao%20&%20Hanchi',
-    'Sharon%20&%20Chris',
+    'Mum%20&%20Dad',
     'Michael%20&%20Drew',
     'Vanessa%20&%20Cal',
-    'Jean%20&%20David',
+    'Nana%20&%20Grandad',
     'Abid',
     'Ben',
     'Greg',
@@ -66,6 +66,9 @@ if (nameUrl && guestList.includes(nameUrl)) {
 //     e.style.minHeight = height + 'px';
 //     e.style.minWidth = width + 'px';
 // })
+
+const nameText = document.querySelector('.name-text');
+nameText.innerHTML = nameUrl.replace(/%20/g, " ").toUpperCase();
 
 function showFirst() {
     formGroups.forEach(function(e, i) {
