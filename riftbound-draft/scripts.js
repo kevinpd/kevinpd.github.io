@@ -10368,9 +10368,9 @@ function loadSavedDeck() {
     }
 }
 
-function saveCardToDeck(card) {
+function saveCardToDeck(card, packNum) {
     const deck = loadSavedDeck();
-    const packNum = parseInt(packAmount.getAttribute("data-pack")) - 1;
+    packNum = parseInt(packNum) - 1;
     if (packNum >= 0) {
         const pack = deck[packNum] ?? [];
         pack.push(card);
@@ -10540,6 +10540,7 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                 const cardEl = document.createElement("div");
                 cardEl.classList.add("card");
                 cardEl.setAttribute("data-id", id);
+                cardEl.setAttribute("data-pack", packNum);
 
                 if (!isDeck) {
                     const deck = loadSavedDeck();
@@ -10573,7 +10574,7 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                             removeCardFromDeck(cardEl.getAttribute("data-id"));
                             cardEl.classList.remove("selected");
                         } else {
-                            saveCardToDeck(cardEl.getAttribute("data-id"));
+                            saveCardToDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
                             cardEl.classList.add("selected");
                         }
                     });
@@ -10605,13 +10606,17 @@ newDraftBtn.addEventListener("click", function() {
     clearSavedDeck();
     clearSavedPacks();
     updatePackCount();
+    openPackBtn.classList.remove("hidden");
     packArea.innerHTML = "";
 });
 
 openPackBtn.addEventListener("click", () => {
-    const pack = generatePack();
-    savePack(pack);
-    renderPack(packArea, pack);
+    for (let i = 0; i < 6; i++) {
+        const pack = generatePack();
+        savePack(pack);
+        openPackBtn.classList.add("hidden");
+    }
+    renderDeck(packArea, loadSavedPacks(), false);
 });
 
 viewDeckBtn.addEventListener("click", () => {
