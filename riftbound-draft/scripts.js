@@ -10534,7 +10534,7 @@ async function renderDeck(deckArea, pack, isDeck = true) {
             <h2 class="pack-heading">Pack ${packNum}</h2>
         `;
 
-        if (isDeck && pack[packNum - 1]) {
+        if (pack[packNum - 1]) {
             packId.forEach((id) => {
                 const card = cards[id];
                 const cardEl = document.createElement("div");
@@ -10620,6 +10620,6 @@ viewDeckBtn.addEventListener("click", () => {
 });
 
 allPacksBtn.addEventListener("click", () => {
-    const deck = loadSavedDeck();
-    renderDeck(packArea, loadSavedPacks(), false);
+    const packs = loadSavedPacks();
+    renderDeck(packArea, packs, false);
 });
