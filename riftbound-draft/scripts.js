@@ -10376,17 +10376,20 @@ function saveCardToDeck(card, packNum) {
         pack.push(card);
         deck[packNum] = pack;
         localStorage.setItem(DECK_KEY, JSON.stringify(deck));
+        updateTts();
     }
 }
 
-function removeCardFromDeck(cardId) {
+function removeCardFromDeck(cardId, packNum) {
     const deck = loadSavedDeck();
-    const packNum = parseInt(packAmount.getAttribute("data-pack")) - 1;
+    packNum = parseInt(packNum) - 1;
     const i = deck[packNum].indexOf(cardId);
     if (i > -1) {
         deck[packNum].splice(i, 1);
     }
     localStorage.setItem(DECK_KEY, JSON.stringify(deck));
+
+    updateTts();
 }
 
 function clearSavedDeck() {
@@ -10412,10 +10415,9 @@ function clearSavedPacks() {
     localStorage.removeItem(PACKS_KEY);
 }
 
-function updatePackCount() {
-    let packNum = parseInt(loadSavedPacks().length);
-    packAmount.setAttribute("data-pack", packNum);
-    packAmount.innerHTML = "Pack " + packNum;
+function updateCardCount() {
+    let packNum = parseInt(loadSavedDeck().flat().length);
+    packAmount.innerHTML = "Cards (" + packNum + ")";
 }
 
 function generatePack() {
@@ -10504,8 +10506,6 @@ async function renderPack(packArea, pack) {
 
         packArea.appendChild(cardEl);
     });
-
-    updatePackCount();
 }
 
 async function renderDeck(deckArea, pack, isDeck = true) {
@@ -10515,15 +10515,6 @@ async function renderDeck(deckArea, pack, isDeck = true) {
     deckArea.classList.add("view-deck");
 
     deckArea.innerHTML = "";
-    if (isDeck) {
-        deckArea.innerHTML = `
-            <div class="tts-area">
-                <label for="tts-code">TTS Code</label>
-                <hr />
-                <textarea class="tts-code" name="tts-code" id="tts-code" readonly>${pack.flat().join(" ")}</textarea>
-            </div>
-        `;
-    }
 
     packNum = 1;
     pack.forEach((packId) => {
@@ -10563,15 +10554,14 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                 if (isDeck) {
                     cardEl.addEventListener("click", () => {
                         if (!cardEl.classList.contains("removed")) {
-                            removeCardFromDeck(cardEl.getAttribute("data-id"));
-                            updateTts();
+                            removeCardFromDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
                             cardEl.classList.add("removed");
                         }
                     });
                 } else {
                     cardEl.addEventListener("click", () => {
                         if (cardEl.classList.contains("selected")) {
-                            removeCardFromDeck(cardEl.getAttribute("data-id"));
+                            removeCardFromDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
                             cardEl.classList.remove("selected");
                         } else {
                             saveCardToDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
@@ -10588,6 +10578,17 @@ async function renderDeck(deckArea, pack, isDeck = true) {
     });
 }
 
+function updateTts() {
+    const deck = loadSavedDeck();
+    const ttsArea = document.querySelector('.tts-area .tts-code');
+    if (deck.length) {
+        ttsArea.innerText = deck.flat().join(" ").trim();
+    } else {
+        ttsArea.innerText = "";
+    }
+    updateCardCount();
+}
+
 const newDraftBtn = document.querySelector(".new-draft");
 const openPackBtn = document.querySelector(".open-pack");
 const viewDeckBtn = document.querySelector(".view-deck");
@@ -10598,6 +10599,8 @@ window.addEventListener("load", function() {
     const savedPacks = loadSavedPacks();
     if (savedPacks.length) {
         const lastPack = savedPacks[savedPacks.length - 1];
+        openPackBtn.classList.add("hidden");
+        updateTts();
         renderPack(packArea, lastPack);
     }
 });
@@ -10605,7 +10608,7 @@ window.addEventListener("load", function() {
 newDraftBtn.addEventListener("click", function() {
     clearSavedDeck();
     clearSavedPacks();
-    updatePackCount();
+    updateTts();
     openPackBtn.classList.remove("hidden");
     packArea.innerHTML = "";
 });
