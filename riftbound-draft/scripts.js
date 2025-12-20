@@ -10418,7 +10418,7 @@ function generatePack() {
         pack.push(getCardId(manaCard));
     }
 
-    return pack.sort(() => Math.random() - 0.5);
+    return pack;
 }
 
 async function renderPack(packArea, pack) {
