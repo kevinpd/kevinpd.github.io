@@ -8089,21 +8089,6 @@ const cards = {
             "quantity": "1"
         }
     },
-    "SFD-020-2": {
-        name: "Draven, Vanquisher",
-        description: "When I win a combat, gain a Gold gear token exhausted. When I attack or defend, you pay 1 Fury Power. If you do, give me +2 Might.",
-        image: "https://steamusercontent-a.akamaihd.net/ugc/11165438257154136068/77094F7D956822F753E9",
-        gmNotes: {
-            "might": "4",
-            "type": "unit",
-            "isSignature": true,
-            "signature_key": "draven",
-            "set": "Origin",
-            "rarity": 3,
-            "token": "Gold",
-            "quantity": "1"
-        }
-    },
     "SFD-024-1": {
         name: "",
         description: "",
