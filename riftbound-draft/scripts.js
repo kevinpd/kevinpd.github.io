@@ -24,7 +24,7 @@ const cards = {
         gmNotes: {
             "color_identity": "mind, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "viktor",
             "isToken": false,
@@ -42,7 +42,7 @@ const cards = {
         gmNotes: {
             "color_identity": "mind, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "viktor",
             "isToken": false,
@@ -139,7 +139,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "jinx",
             "isToken": false,
@@ -154,7 +154,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "jinx",
             "isToken": false,
@@ -184,7 +184,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, body",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "volibear",
             "isToken": false,
@@ -199,7 +199,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, body",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "volibear",
             "isToken": false,
@@ -229,7 +229,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "yasuo",
             "isToken": false,
@@ -244,7 +244,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "yasuo",
             "isToken": false,
@@ -450,7 +450,7 @@ const cards = {
             "power_cost": "1",
             "energy_cost": "0",
             "type": "gear",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": false,
             "isToken": false,
             "isCosmetic": false,
@@ -501,7 +501,7 @@ const cards = {
             "power_cost": "1",
             "energy_cost": "0",
             "type": "gear",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": false,
             "isToken": false,
             "isCosmetic": false,
@@ -812,7 +812,7 @@ const cards = {
             "energy_cost": "4",
             "might": "4",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "viktor",
             "isToken": false,
@@ -1391,7 +1391,7 @@ const cards = {
             "energy_cost": "10",
             "might": "9",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "volibear",
             "isToken": false,
@@ -1519,7 +1519,7 @@ const cards = {
             "power_cost": "1",
             "energy_cost": "0",
             "type": "gear",
-            "rarity": 4,
+            "rarity": 5,
             "image": "https://steamusercontent-a.akamaihd.net/ugc/40076514749549399/B6BE4ECFC3A710A2783D45761CABB99DB66B90E4/",
             "isSignature": false,
             "isToken": false,
@@ -1829,7 +1829,7 @@ const cards = {
             "energy_cost": "4",
             "might": "4",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "missfortune",
             "isToken": false,
@@ -1923,7 +1923,7 @@ const cards = {
             "energy_cost": "5",
             "might": "5",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "jinx",
             "isToken": false,
@@ -2231,7 +2231,7 @@ const cards = {
             "energy_cost": "5",
             "might": "5",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "missfortune",
             "isToken": false,
@@ -2459,7 +2459,7 @@ const cards = {
             "energy_cost": "12",
             "might": "10",
             "type": "unit",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": true,
             "signature_key": "volibear",
             "isToken": false,
@@ -2613,7 +2613,7 @@ const cards = {
             "power_cost": "1",
             "energy_cost": "0",
             "type": "gear",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": false,
             "isToken": false,
             "isCosmetic": false,
@@ -2723,7 +2723,7 @@ const cards = {
             "energy_cost": "5",
             "might": "4",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "yasuo",
             "isToken": false,
@@ -2780,7 +2780,7 @@ const cards = {
             "energy_cost": "6",
             "might": "6",
             "type": "unit",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": true,
             "signature_key": "yasuo",
             "isToken": false,
@@ -3295,7 +3295,6 @@ const cards = {
             "color_identity": "calm",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
@@ -3311,7 +3310,6 @@ const cards = {
             "color_identity": "body",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
@@ -3327,7 +3325,6 @@ const cards = {
             "color_identity": "body",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
@@ -3343,7 +3340,6 @@ const cards = {
             "color_identity": "chaos",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
@@ -3359,7 +3355,6 @@ const cards = {
             "color_identity": "chaos",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
@@ -3375,7 +3370,6 @@ const cards = {
             "color_identity": "mind",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
@@ -3391,7 +3385,6 @@ const cards = {
             "color_identity": "mind",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
@@ -3578,7 +3571,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, mind",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "ahri",
             "isToken": false,
@@ -3593,7 +3586,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, mind",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "ahri",
             "isToken": false,
@@ -3686,7 +3679,7 @@ const cards = {
             "energy_cost": "5",
             "might": "3",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "ahri",
             "isToken": false,
@@ -3705,7 +3698,7 @@ const cards = {
             "energy_cost": "5",
             "might": "3",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "ahri",
             "isToken": false,
@@ -3724,7 +3717,7 @@ const cards = {
             "energy_cost": "5",
             "might": "3",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "ahri",
             "isToken": false,
@@ -4215,7 +4208,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, mind",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "kaisa",
             "isToken": false,
@@ -4230,7 +4223,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, mind",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "kaisa",
             "isToken": false,
@@ -4390,7 +4383,7 @@ const cards = {
             "energy_cost": "2",
             "might": "2",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "teemo",
             "isToken": false,
@@ -4422,7 +4415,7 @@ const cards = {
         gmNotes: {
             "color_identity": "body, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "sett",
             "isToken": false,
@@ -4437,7 +4430,7 @@ const cards = {
         gmNotes: {
             "color_identity": "body, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "sett",
             "isToken": false,
@@ -4565,7 +4558,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "leona",
             "isToken": false,
@@ -4582,7 +4575,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "leona",
             "isToken": false,
@@ -4692,7 +4685,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, body",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "leesin",
             "isToken": false,
@@ -4709,7 +4702,7 @@ const cards = {
         gmNotes: {
             "color_identity": "calm, body",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "leesin",
             "isToken": false,
@@ -4788,7 +4781,7 @@ const cards = {
             "energy_cost": "5",
             "might": "5",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "leesin",
             "isToken": false,
@@ -4875,7 +4868,7 @@ const cards = {
         gmNotes: {
             "color_identity": "body, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "missfortune",
             "isToken": false,
@@ -4890,7 +4883,7 @@ const cards = {
         gmNotes: {
             "color_identity": "body, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "missfortune",
             "isToken": false,
@@ -4920,7 +4913,7 @@ const cards = {
         gmNotes: {
             "color_identity": "mind, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "teemo",
             "isToken": false,
@@ -4935,7 +4928,7 @@ const cards = {
         gmNotes: {
             "color_identity": "mind, chaos",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "teemo",
             "isToken": false,
@@ -5021,7 +5014,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "darius",
             "isToken": false,
@@ -5036,7 +5029,7 @@ const cards = {
         gmNotes: {
             "color_identity": "fury, order",
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "darius",
             "isToken": false,
@@ -5073,7 +5066,7 @@ const cards = {
             "energy_cost": "6",
             "might": "6",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "darius",
             "isToken": false,
@@ -5092,7 +5085,7 @@ const cards = {
             "energy_cost": "6",
             "might": "6",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "darius",
             "isToken": false,
@@ -5111,7 +5104,7 @@ const cards = {
             "energy_cost": "6",
             "might": "6",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "darius",
             "isToken": false,
@@ -5149,7 +5142,7 @@ const cards = {
             "energy_cost": "5",
             "might": "5",
             "type": "unit",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": true,
             "signature_key": "darius",
             "isToken": false,
@@ -5540,7 +5533,7 @@ const cards = {
             "energy_cost": "6",
             "might": "6",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "leona",
             "isToken": false,
@@ -5582,7 +5575,7 @@ const cards = {
             "energy_cost": "5",
             "might": "4",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "sett",
             "isToken": false,
@@ -5604,7 +5597,7 @@ const cards = {
             "energy_cost": "5",
             "might": "4",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "sett",
             "isToken": false,
@@ -5626,7 +5619,7 @@ const cards = {
             "energy_cost": "5",
             "might": "4",
             "type": "unit",
-            "rarity": 4,
+            "rarity": 5,
             "isSignature": true,
             "signature_key": "sett",
             "isToken": false,
@@ -8151,7 +8144,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "azir",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-054-1": {
@@ -8177,7 +8170,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "jax",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-057-1": {
@@ -8203,7 +8196,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "irelia",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-057-3": {
@@ -8216,7 +8209,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "irelia",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-057-4": {
@@ -8229,7 +8222,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "irelia",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-058-1": {
@@ -8242,6 +8235,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "ornn",
             "set": "Origin",
+            "rarity": 4
         }
     },
     "SFD-058-2": {
@@ -8254,7 +8248,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "ornn",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-079-1": {
@@ -8293,7 +8287,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "ezreal",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-085-1": {
@@ -8319,7 +8313,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "ornn",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-084-1": {
@@ -8358,7 +8352,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "lucian",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-116-1": {
@@ -8384,7 +8378,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "yone",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-116-3": {
@@ -8397,7 +8391,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "yone",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-119-1": {
@@ -8423,7 +8417,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "jax",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-120-1": {
@@ -8449,7 +8443,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "sivir",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-140-1": {
@@ -8488,7 +8482,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "irelia",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-146-1": {
@@ -8527,7 +8521,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "draven",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-171-1": {
@@ -8553,7 +8547,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "renata",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-170-1": {
@@ -8579,7 +8573,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "reksai",
             "set": "Origin",
-            "rarity": 3
+            "rarity": 4
         }
     },
     "SFD-173-1": {
@@ -8631,7 +8625,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "fiora",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-177-1": {
@@ -8657,7 +8651,7 @@ const cards = {
             "isSignature": true,
             "signature_key": "azir",
             "set": "Origin",
-            "rarity": 4
+            "rarity": 5
         }
     },
     "SFD-181-1": {
@@ -8680,7 +8674,7 @@ const cards = {
         image: "https://steamusercontent-a.akamaihd.net/ugc/15202078727719440176/A4785DBD81E644E893BDFD3289FDC49C5BAB5C4E/",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "rumble",
             "isToken": false,
@@ -8710,7 +8704,7 @@ const cards = {
         image: "https://images2.imgbox.com/71/a9/5U4Izik2_o.png",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "azir",
             "isToken": false,
@@ -8786,7 +8780,7 @@ const cards = {
         image: "https://steamusercontent-a.akamaihd.net/ugc/15725015903697886063/23943F3AD8A34778A77A5A077602F34EFD15E495/",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "fiora",
             "isToken": false,
@@ -8814,7 +8808,7 @@ const cards = {
         image: "https://steamusercontent-a.akamaihd.net/ugc/9694739922082868110/BA52D96A7C5FF98160C656F5D9C7AFD6C2DE94A6/",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "lucian",
             "isToken": false,
@@ -8842,7 +8836,7 @@ const cards = {
         image: "https://steamusercontent-a.akamaihd.net/ugc/14054879612719296392/4AFB4C3A10ED224499073278A78C13FE66D6EB02/",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "draven",
             "isToken": false,
@@ -8870,7 +8864,7 @@ const cards = {
         image: "https://steamusercontent-a.akamaihd.net/ugc/10721548500760478827/4ED8F623E80CD4A25FC8AAF8460B8DF3747693CB/",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "reksai",
             "isToken": false,
@@ -8898,7 +8892,7 @@ const cards = {
         image: "https://steamusercontent-a.akamaihd.net/ugc/13638076388971064554/DE5C870A5D13994C8003A7E93B7507FD0FC31E8C/",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "ornn",
             "isToken": false,
@@ -8926,7 +8920,7 @@ const cards = {
         image: "https://steamusercontent-a.akamaihd.net/ugc/13636453029414502233/D77C4BF76F5B514CC2993D6051D88E612E8EE074/",
         gmNotes: {
             "type": "legend",
-            "rarity": 3,
+            "rarity": 4,
             "isSignature": false,
             "signature_key": "irelia",
             "isToken": false,
@@ -10375,7 +10369,13 @@ function generatePack() {
     }
 
     for (let i = 0; i < 2; i++) {
-        const tempRarity = Math.random() < 0.10 ? 4 : 3;
+        const tempRand = Math.round(Math.random() * 100);
+        let tempRarity = 3;
+        if (tempRand < 5) {
+            tempRarity = 5;
+        } else if (tempRand < 10) {
+            tempRarity = 4;
+        }
         const card = pickRandom(cardsByRarity(tempRarity));
         if (card) {
             pack.push(getCardId(card));
@@ -10384,7 +10384,9 @@ function generatePack() {
 
     let tempFoil;
     const tempRand = Math.round(Math.random() * 100);
-    if (tempRand < 5) {
+    if (tempRand < 1) {
+        tempFoil = 5;
+    } else if (tempRand < 5) {
         tempFoil = 4;
     } else if (tempRand < 15) {
         tempFoil = 3;
