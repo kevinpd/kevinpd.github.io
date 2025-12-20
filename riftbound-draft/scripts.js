@@ -10438,10 +10438,10 @@ async function renderPack(packArea, pack) {
         cardEl.innerHTML = `
             <div class="card-inner rarity-${card.gmNotes.rarity}">
                 <div class="card-front">
-                    <img src="${card.image}" alt="${card.name}">
+                    <img src="${card.image}" alt="${card.name}" draggable="false">
                 </div>
                 <div class="card-back">
-                    <img src="${cardBackImg}" alt="Card Back">
+                    <img src="${cardBackImg}" alt="Card Back" draggable="false">
                 </div>
             </div>
         `;
@@ -10495,10 +10495,10 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                 cardEl.innerHTML = `
                     <div class="card-inner rarity-${card.gmNotes.rarity}">
                         <div class="card-front">
-                            <img src="${card.image}" alt="${card.name}">
+                            <img src="${card.image}" alt="${card.name}" draggable="false">
                         </div>
                         <div class="card-back">
-                            <img src="${cardBackImg}" alt="Card Back">
+                            <img src="${cardBackImg}" alt="Card Back" draggable="false">
                         </div>
                     </div>
                 `;
