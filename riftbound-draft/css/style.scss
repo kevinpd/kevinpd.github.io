@@ -32,7 +32,7 @@ button:disabled {
 .pack-area {
   margin-top: 32px;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   transform-origin: left center;
   transform: scaleY(0);
@@ -45,10 +45,38 @@ button:disabled {
     grid-template-columns: 1fr;
     .pack-section {
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       .pack-heading {
         grid-column: 1/-1;
+      }
+      @media all and (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+        .card-inner {
+          width: calc((75vw / 4));
+          height: calc((105vw / 4));
+        }
+      }
+      @media all and (min-width: 992px) {
+        grid-template-columns: repeat(5, 1fr);
+        .card-inner {
+          width: calc((75vw / 5));
+          height: calc((105vw / 5));
+        }
+      }
+      @media all and (min-width: 1200px) {
+        grid-template-columns: repeat(6, 1fr);
+        .card-inner {
+          width: calc((75vw / 6));
+          height: calc((105vw / 6));
+        }
+      }
+      @media all and (min-width: 1400px) {
+        grid-template-columns: repeat(7, 1fr);
+        .card-inner {
+          width: calc((75vw / 7));
+          height: calc((105vw / 7));
+        }
       }
     }
   }
@@ -98,8 +126,8 @@ button:disabled {
 }
 
 .card-inner {
-  width: 10vw;
-  height: 14vw;
+  width: calc((75vw / 3));
+  height: calc((105vw / 3));
   position: relative;
   transform-style: preserve-3d;
   transform: rotateY(0);

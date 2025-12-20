@@ -10549,11 +10549,15 @@ const packArea = document.querySelector(".pack-area");
 
 window.addEventListener("load", function() {
     const savedPacks = loadSavedPacks();
-    if (savedPacks.length) {
-        const lastPack = savedPacks[savedPacks.length - 1];
+    const deck = loadSavedDeck();
+    if (deck.length) {
         openPackBtn.classList.add("hidden");
         updateTts();
-        renderPack(packArea, lastPack);
+        renderDeck(packArea, deck, true);
+    } else if (savedPacks.length) {
+        openPackBtn.classList.add("hidden");
+        updateTts();
+        renderDeck(packArea, savedPacks, false);
     }
 });
 
