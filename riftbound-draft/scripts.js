@@ -10945,7 +10945,7 @@ function loadSavedDeck() {
 
 function saveCardToDeck(card, packNum) {
     const deck = loadSavedDeck();
-    packNum = parseInt(packNum) - 1;
+    packNum = parseInt(packNum);
     if (packNum >= 0) {
         const pack = deck[packNum] ?? [];
         pack.push(card);
@@ -10957,7 +10957,7 @@ function saveCardToDeck(card, packNum) {
 
 function removeCardFromDeck(cardId, packNum) {
     const deck = loadSavedDeck();
-    packNum = parseInt(packNum) - 1;
+    packNum = parseInt(packNum);
     const i = deck[packNum].indexOf(cardId);
     if (i > -1) {
         deck[packNum].splice(i, 1);
@@ -11066,7 +11066,7 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                 const cardEl = document.createElement("div");
                 cardEl.classList.add("card");
                 cardEl.setAttribute("data-id", id);
-                cardEl.setAttribute("data-pack", i + 1);
+                cardEl.setAttribute("data-pack", i);
 
                 if (!isDeck) {
                     const deck = loadSavedDeck();
