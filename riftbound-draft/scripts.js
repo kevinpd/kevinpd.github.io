@@ -10894,6 +10894,20 @@ const cards = {
     },
 }
 
+const rarityMain = [
+  [5, 1],
+  [4, 4],
+  [3, 95]
+];
+
+const rarityFoil = [
+  [5, 1],
+  [4, 4],
+  [3, 10],
+  [2, 25],
+  [1, 60]
+];
+
 const cardBackImg = "https://steamusercontent-a.akamaihd.net/ugc/40065918639591701/126653BC8C19063AE61162AC4A13B52E24AF3E1B/";
 const cardsArray = Object.values(cards);
 const PACKS_KEY = "riftbound_packs";
@@ -10910,7 +10924,6 @@ function cardsByRarity(rarity) {
 }
 
 function manaCards() {
-    console.log(cardsArray.filter((c) => c.gmNotes?.isToken));
     return cardsArray.filter((c) => c.gmNotes?.isToken);
 }
 
@@ -10983,6 +10996,16 @@ function updateCardCount() {
     packAmount.innerHTML = "Cards (" + packNum + ")";
 }
 
+function rollRarity(table) {
+    const roll = Math.random() * 100;
+    let total = 0;
+
+    for (const [rarity, chance] of table) {
+        total += chance;
+        if (roll < total) return rarity;
+    }
+}
+
 function generatePack() {
     const pack = [];
 
@@ -11001,33 +11024,15 @@ function generatePack() {
     }
 
     for (let i = 0; i < 2; i++) {
-        const tempRand = Math.round(Math.random() * 100);
-        let tempRarity = 3;
-        if (tempRand < 5) {
-            tempRarity = 5;
-        } else if (tempRand < 10) {
-            tempRarity = 4;
-        }
-        const card = pickRandom(cardsByRarity(tempRarity));
+        const rarity = rollRarity(rarityMain);
+        const card = pickRandom(cardsByRarity(rarity));
         if (card) {
             pack.push(card.id);
         }
     }
 
-    let tempFoil;
-    const tempRand = Math.round(Math.random() * 100);
-    if (tempRand < 1) {
-        tempFoil = 5;
-    } else if (tempRand < 5) {
-        tempFoil = 4;
-    } else if (tempRand < 15) {
-        tempFoil = 3;
-    } else if (tempRand < 40) {
-        tempFoil = 2;
-    } else {
-        tempFoil = 1;
-    }
-    const foilCard = pickRandom(cardsByRarity(tempFoil));
+    const randFoil = rollRarity(rarityFoil);
+    const foilCard = pickRandom(cardsByRarity(randFoil));
     if (foilCard) {
         pack.push(foilCard.id);
     }
@@ -11073,9 +11078,9 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                         cardEl.classList.add("foil");
                     }
                 }
- 
+
                 cardEl.innerHTML = `
-                    <div class="card-inner rarity-${card.gmNotes.rarity}">
+                    <div class="card-inner rarity-${card.gmNotes?.rarity}">
                         <div class="card-front">
                             <img src="${card.image}" alt="${card.name}" draggable="false">
                         </div>
