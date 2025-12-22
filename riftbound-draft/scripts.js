@@ -10914,6 +10914,7 @@ const DECK_KEY = "draft_deck";
 const delay = ms => new Promise(res => setTimeout(res, ms));
 const playerArea = document.querySelector(".player-area");
 const packAmount = document.querySelector(".pack-amount");
+const activeColourFilters = new Set();
 
 let packs = {};
 let deck = {};
@@ -11003,6 +11004,27 @@ function rollRarity(table) {
         total += chance;
         if (roll < total) return rarity;
     }
+}
+
+function applyColourFilter() {
+  const cardsEls = document.querySelectorAll(".card");
+
+  if (activeColourFilters.size === 0) {
+    cardsEls.forEach(card => card.classList.remove("hidden"));
+    return;
+  }
+
+  cardsEls.forEach(cardEl => {
+    const id = cardEl.dataset.id;
+    const card = cards[id];
+    const colours = card.gmNotes.color_identity
+      ?.split(",")
+      .map(c => c.trim());
+
+    const matches = colours?.some(c => activeColourFilters.has(c));
+
+    cardEl.classList.toggle("hidden", !matches);
+  });
 }
 
 function generatePack() {
@@ -11131,6 +11153,7 @@ const openPackBtn = document.querySelector(".open-pack");
 const viewDeckBtn = document.querySelector(".view-deck");
 const allPacksBtn = document.querySelector(".all-packs");
 const packArea = document.querySelector(".pack-area");
+const filterBtns = document.querySelectorAll(".filter-btn");
 
 window.addEventListener("load", function() {
     const savedPacks = loadSavedPacks();
@@ -11171,4 +11194,20 @@ viewDeckBtn.addEventListener("click", () => {
 allPacksBtn.addEventListener("click", () => {
     const packs = loadSavedPacks();
     renderDeck(packArea, packs, false);
+});
+
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const colour = btn.dataset.colour;
+
+    if (activeColourFilters.has(colour)) {
+      activeColourFilters.delete(colour);
+      btn.classList.remove("active");
+    } else {
+      activeColourFilters.add(colour);
+      btn.classList.add("active");
+    }
+
+    applyColourFilter();
+  });
 });
