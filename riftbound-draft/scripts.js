@@ -3587,7 +3587,6 @@ const cards = {
             "color_identity": "order",
             "type": "rune",
             "rarity": 1,
-            
             "isSignature": false,
             "isToken": true,
             "isCosmetic": false,
