@@ -10408,45 +10408,6 @@ function generatePack() {
     return pack;
 }
 
-async function renderPack(packArea, pack) {
-    packArea.classList.remove("view-deck");
-    packArea.classList.remove("new-pack");
-    await delay(500);
-    packArea.classList.add("new-pack");
-    
-    packArea.innerHTML = "";
-
-    pack.forEach((id) => {
-        const card = cards[id];
-        const cardEl = document.createElement("div");
-        cardEl.classList.add("card");
-        cardEl.setAttribute("data-id", id);
-
-        cardEl.innerHTML = `
-            <div class="card-inner rarity-${card.gmNotes.rarity}">
-                <div class="card-front">
-                    <img src="${card.image}" alt="${card.name}" draggable="false">
-                </div>
-                <div class="card-back">
-                    <img src="${cardBackImg}" alt="Card Back" draggable="false">
-                </div>
-            </div>
-        `;
-
-        cardEl.addEventListener("click", () => {
-            if (cardEl.classList.contains("selected")) {
-                removeCardFromDeck(cardEl.getAttribute("data-id"));
-                cardEl.classList.remove("selected");
-            } else {
-                saveCardToDeck(cardEl.getAttribute("data-id"));
-                cardEl.classList.add("selected");
-            }
-        });
-
-        packArea.appendChild(cardEl);
-    });
-}
-
 async function renderDeck(deckArea, pack, isDeck = true) {
     deckArea.classList.remove("view-deck");
     deckArea.classList.remove("new-pack");
