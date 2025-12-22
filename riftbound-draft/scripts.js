@@ -11048,30 +11048,32 @@ async function renderDeck(deckArea, pack, isDeck = true) {
 
     deckArea.innerHTML = "";
 
-    packNum = 1;
-    pack.forEach((packId) => {
+    pack.forEach((packId, i) => {
         const packSection = document.createElement("div");
         packSection.classList.add("pack-section");
 
         packSection.innerHTML = `
-            <h2 class="pack-heading">Pack ${packNum}</h2>
+            <h2 class="pack-heading">Pack ${i + 1}</h2>
         `;
 
-        if (pack[packNum - 1]) {
-            packId.forEach((id) => {
+        if (pack[i]) {
+            packId.forEach((id, ii) => {
                 const card = cards[id];
                 const cardEl = document.createElement("div");
                 cardEl.classList.add("card");
                 cardEl.setAttribute("data-id", id);
-                cardEl.setAttribute("data-pack", packNum);
+                cardEl.setAttribute("data-pack", i);
 
                 if (!isDeck) {
                     const deck = loadSavedDeck();
-                    if (deck.length && deck[packNum - 1] && deck[packNum - 1].includes(id)) {
+                    if (deck.length && deck[i] && deck[i].includes(id)) {
                         cardEl.classList.add("selected");
                     }
+                    if (ii === 12) {
+                        cardEl.classList.add("foil");
+                    }
                 }
-
+ 
                 cardEl.innerHTML = `
                     <div class="card-inner rarity-${card.gmNotes.rarity}">
                         <div class="card-front">
@@ -11106,7 +11108,6 @@ async function renderDeck(deckArea, pack, isDeck = true) {
             });
         }
         deckArea.appendChild(packSection);
-        packNum++;
     });
 }
 
