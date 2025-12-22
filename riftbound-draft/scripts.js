@@ -11066,7 +11066,7 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                 const cardEl = document.createElement("div");
                 cardEl.classList.add("card");
                 cardEl.setAttribute("data-id", id);
-                cardEl.setAttribute("data-pack", i);
+                cardEl.setAttribute("data-pack", i + 1);
 
                 if (!isDeck) {
                     const deck = loadSavedDeck();
