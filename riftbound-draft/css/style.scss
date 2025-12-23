@@ -1,12 +1,51 @@
 body {
-	margin: 0;
-	background: #0e0e12;
-	color: #fff;
-	font-family: system-ui, sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	min-height: 100vh;
+	padding: 10px 0;
+	margin: 0;
+	box-sizing: border-box;
+	background: linear-gradient(to top, #0c0c0f 0%, #1a1724 100%);
+	color: #fff;
+	font-family: system-ui, sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media all and (min-width: 576px) {
+		max-width: 540px;
+	}
+	@media all and (min-width: 768px) {
+		max-width: 720px;
+	}
+	@media all and (min-width: 992px) {
+		max-width: 960px;
+	}
+	@media all and (min-width: 1200px) {
+		max-width: 1140px;
+	}
+	@media all and (min-width: 1400px) {
+		max-width: 1320px;
+	}
+}
+
+header,
+main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	.core-style {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 h1 {
@@ -117,22 +156,27 @@ button:disabled {
 }
 
 .tts-area {
+	display: flex;
+	flex-direction: column;
 	label {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		font-size: 1.5rem;
 		font-weight: 700;
 		margin-bottom: 5px;
 	}
+	hr {
+		width: 100%;
+	}
 	.tts-code {
-		width: 100% !important;
 		padding: 5px 10px;
 		background-color: transparent;
 		color: white;
+		border: 1px solid transparent;
 		font-size: 1rem;
+		resize: vertical;
 	}
-}
-
-.menu-btns {
-	text-align: center;
 }
 
 .card {

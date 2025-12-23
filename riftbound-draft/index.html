@@ -6,46 +6,55 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Pack Open Sim || Riftbound</title>
+    <title>Draft Deck maker || Riftbound</title>
 
     <link rel="stylesheet" href="css/style.css?_=1">
 </head>
 <body>
-    <h1>Riftbound Pack opener</h1>
-    <div class="menu-btns">
-        <p class="pack-amount"></p>
-        <hr />
-        <button class="new-draft">New draft</button>
-        <button class="open-pack">Open pack</button>
-        <hr />
-        <button class="view-deck">View deck</button>
-        <button class="all-packs">All packs</button>
-    </div>
+	<header>
+		<div class="container">
+			<div class="core-style">
+				<h1>Riftbound Drafter</h1>
+				<div class="header-btns">
+					<button class="new-draft">New draft</button>
+					<button class="open-pack">Open pack</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="tts-area">
+				<label for="tts-code">
+					<span>Current Deck<span class="pack-amount"></span></span>
+					<div class="menu-btns">
+						<button class="view-deck">Deck</button>
+						<button class="all-packs">Packs</button>
+					</div>
+				</label>
+				<hr />
+				<textarea class="tts-code" name="tts-code" id="tts-code" readonly></textarea>
+			</div>
 
-    <div class="tts-area">
-        <label for="tts-code">Current Deck || TTS Code</label>
-        <hr />
-        <textarea class="tts-code" name="tts-code" id="tts-code" readonly></textarea>
-    </div>
+			<div class="filters">
+				<hr />
+				<h2>Filters</h2>
+				<div class="filter-colours">
+					<button class="filter-btn" data-colour="fury"><img src="https://riftmana.com/wp-content/uploads/Icons/fury.webp" alt=""></button>
+					<button class="filter-btn" data-colour="calm"><img src="https://riftmana.com/wp-content/uploads/Icons/calm.webp" alt=""></button>
+					<button class="filter-btn" data-colour="mind"><img src="https://riftmana.com/wp-content/uploads/Icons/mind.webp" alt=""></button>
+					<button class="filter-btn" data-colour="body"><img src="https://riftmana.com/wp-content/uploads/Icons/body.webp" alt=""></button>
+					<button class="filter-btn" data-colour="chaos"><img src="https://riftmana.com/wp-content/uploads/Icons/chaos.webp" alt=""></button>
+					<button class="filter-btn" data-colour="order"><img src="https://riftmana.com/wp-content/uploads/Icons/order.webp" alt=""></button>
+					<button class="filter-btn grey" data-colour="grey"><img src="https://cdn-icons-png.flaticon.com/512/16925/16925251.png" alt=""></button>
+				</div>
+			</div>
 
-    <div class="filters">
-        <hr />
-        <h2>Filters</h2>
-        <div class="filter-colours">
-            <button class="filter-btn" data-colour="fury"><img src="https://riftmana.com/wp-content/uploads/Icons/fury.webp" alt=""></button>
-            <button class="filter-btn" data-colour="calm"><img src="https://riftmana.com/wp-content/uploads/Icons/calm.webp" alt=""></button>
-            <button class="filter-btn" data-colour="mind"><img src="https://riftmana.com/wp-content/uploads/Icons/mind.webp" alt=""></button>
-            <button class="filter-btn" data-colour="body"><img src="https://riftmana.com/wp-content/uploads/Icons/body.webp" alt=""></button>
-            <button class="filter-btn" data-colour="chaos"><img src="https://riftmana.com/wp-content/uploads/Icons/chaos.webp" alt=""></button>
-            <button class="filter-btn" data-colour="order"><img src="https://riftmana.com/wp-content/uploads/Icons/order.webp" alt=""></button>
-            <button class="filter-btn grey" data-colour="grey"><img src="https://cdn-icons-png.flaticon.com/512/16925/16925251.png" alt=""></button>
-        </div>
-    </div>
+			<div class="pack-area"></div>
 
-    <div class="pack-area"></div>
-
-    <div class="rune-area">
-    </div>
+			<div class="rune-area"></div>
+		</div>
+	</main>
 
     <script src="scripts.js?_=1"></script>
 </body>

@@ -11229,7 +11229,7 @@ function savePack(pack) {
 function updateCardCount() {
     let cardNum = parseInt(loadSavedDeck().filter(e => {return e != null}).flat().length);
     let runeNum = parseInt(loadSavedDeck(RUNE_KEY).filter(e => {return e != null}).flat().length);
-    packAmount.innerHTML = "Cards (" + cardNum + ") <br/> Runes (" + runeNum + ")";
+    packAmount.innerHTML = " || Cards (" + cardNum + ") · Runes (" + runeNum + ")";
 }
 
 function rollRarity(table) {
@@ -11349,9 +11349,11 @@ async function renderDeck(deckArea, pack, isDeck = true) {
         const packSection = document.createElement("div");
         packSection.classList.add("pack-section");
 
-        packSection.innerHTML = `
-            <h2 class="pack-heading">Pack ${i + 1}</h2>
-        `;
+        if (packId) {
+            packSection.innerHTML = `
+                <h2 class="pack-heading">Pack ${i + 1}</h2>
+            `;
+        }
 
         if (pack[i]) {
             packId.forEach((id, ii) => {
