@@ -228,6 +228,16 @@ button:disabled {
   &:not(:last-child) {
     margin-right: 5px;
   }
+  &.grey {
+    img {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(310%) hue-rotate(203deg) brightness(115%) contrast(78%);
+    }
+    &.active {
+      img {
+        filter: brightness(0) saturate(100%);
+      }
+    }
+  }
 }
 
 .card {

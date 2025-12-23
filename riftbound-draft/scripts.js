@@ -11453,7 +11453,6 @@ window.addEventListener("load", function() {
         if (runeDeck.includes(card.id)) {
             cardEl.classList.add("selected");
         }
-        console.log(runeDeck);
         const currentRunes = runeDeck.filter((c) => c == card.id );
         const runeCount = parseInt(currentRunes.flat().length);
         cardEl.innerHTML = `
