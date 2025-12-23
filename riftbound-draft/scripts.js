@@ -11207,8 +11207,8 @@ function removeCardFromDeck(cardId, packNum, key = DECK_KEY) {
 
 function clearSavedAll() {
     localStorage.removeItem(DECK_KEY);
-    localStorage.removeItem(RUNE_KEY);
     localStorage.removeItem(PACKS_KEY);
+    resetRunes();
 }
 
 function loadSavedPacks() {
@@ -11262,6 +11262,19 @@ function updateRuneCount(card, add) {
     }
 }
 
+function resetRunes() {
+    localStorage.removeItem(RUNE_KEY);
+
+    const runeCards = document.querySelectorAll('.rune-area .card');
+    runeCards.forEach(card => {
+        card.classList.remove("selected");
+        const runeCounter = card.querySelector(".rune-count");
+        runeCounter.classList.remove("has-count");
+        runeCounter.setAttribute("data-count", 0);
+        runeCounter.innerHTML = "";
+    });
+}
+
 function applyColourFilter() {
   const cardsEls = document.querySelectorAll(".card");
 
@@ -11284,6 +11297,8 @@ function applyColourFilter() {
 }
 
 function generatePack() {
+    resetRunes();
+    
     const pack = [];
 
     for (let i = 0; i < 7; i++) {
