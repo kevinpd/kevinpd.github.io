@@ -11473,7 +11473,7 @@ window.addEventListener("load", function() {
 });
 
 window.addEventListener("contextmenu", (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 });
 
 newDraftBtn.addEventListener("click", function() {
