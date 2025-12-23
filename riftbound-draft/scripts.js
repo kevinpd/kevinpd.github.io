@@ -11205,7 +11205,7 @@ function removeCardFromDeck(cardId, packNum, key = DECK_KEY) {
     updateTts();
 }
 
-function clearSavedDeck() {
+function clearSavedAll() {
     localStorage.removeItem(DECK_KEY);
     localStorage.removeItem(RUNE_KEY);
     localStorage.removeItem(PACKS_KEY);
