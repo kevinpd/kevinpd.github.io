@@ -7736,6 +7736,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9576279723572067519/F3DB50F1FB3BB68F19115834D59E5B7FFEAD0B55/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "type": "unit",
             "rarity": 1,
@@ -7749,6 +7750,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11640077255689422507/CF288FB164701E65C137C5A0322A4CB4024823CA/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "type": "unit",
             "rarity": 1,
@@ -7762,6 +7764,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10698041902077623207/E9658EF6580A74D7E33AD311E7BF95E2748D4AEE/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "type": "unit",
             "rarity": 1,
@@ -7775,6 +7778,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17265965021738016058/85C56B8A7483CBF597A7652228106E52443A0C58/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "7",
             "type": "unit",
             "rarity": 2,
@@ -7788,6 +7792,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13899179540205298445/8329E580BD768868F747877A266F5B1E91E5C9F4/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "type": "unit",
             "rarity": 2,
@@ -7801,6 +7806,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17667130290040298807/76AFC9C39428C7B4846DB89AD83F52A46F9C7EF7/",
         gmNotes: {
+            "color_identity": "body",
             "might": "4",
             "type": "unit",
             "rarity": 1,
@@ -7814,6 +7820,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16103748276509191963/E4AAE8F52D4D3AB3519800B6133CDDE756F91D31/",
         gmNotes: {
+            "color_identity": "body",
             "might": "2",
             "type": "unit",
             "rarity": 1,
@@ -7827,6 +7834,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13452586927263058463/B891EB3E8FEF0519D38CECE39175962C7564D3D7/",
         gmNotes: {
+            "color_identity": "body",
             "might": "4",
             "type": "unit",
             "rarity": 1,
@@ -7840,6 +7848,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15783253002863724142/FA22E74B4ACC4BAE6408880413243D602A237978/",
         gmNotes: {
+            "color_identity": "body",
             "might": "6",
             "type": "unit",
             "rarity": 2,
@@ -7853,6 +7862,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11476469006375049822/57AA8670A9CE5DBB46E34A3BA52229B1FAFCCF7C/",
         gmNotes: {
+            "color_identity": "body",
             "might": "3",
             "type": "unit",
             "rarity": 3,
@@ -7866,6 +7876,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14676738694571520086/62011075B28DCA33CCBC3DE4A64D78E4E475D732/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "3",
             "type": "unit",
             "rarity": 1,
@@ -7879,6 +7890,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17826873566618220967/7A8492EF81751BD0F57B3B5B54AE629665E2B584/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "2",
             "type": "unit",
             "rarity": 1,
@@ -7892,6 +7904,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15528412312860902331/9A8D63CC4FBDA4E543C0B8ACCF5CE0B54E70FAA2/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "1",
             "type": "unit",
             "rarity": 1,
@@ -7905,6 +7918,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18280468096464009782/F0D341A635935D372C480D245A648BBDCB6C2712/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "1",
             "type": "unit",
             "rarity": 2,
@@ -7918,6 +7932,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18335056217727949931/83A5E2D7118AC4ED6F8855FE29CCF16EC458E35A/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "5",
             "type": "unit",
             "rarity": 3,
@@ -7931,6 +7946,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9415291464312221264/308ED80563D89A88EF52B80364263D4243304D5D/",
         gmNotes: {
+            "color_identity": "order",
             "might": "2",
             "type": "unit",
             "rarity": 1,
@@ -7946,6 +7962,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9325774087429060891/5B0AAF5D0F4506BF6EFCEC671CDC9FB1306A6E48/",
         gmNotes: {
+            "color_identity": "order",
             "might": "2",
             "type": "unit",
             "rarity": 1,
@@ -7961,6 +7978,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9514178147142495282/461E8BBCBA3B8A257CE4E2E9B7E07BBCD0112A10/",
         gmNotes: {
+            "color_identity": "order",
             "might": "3",
             "type": "unit",
             "rarity": 2,
@@ -7974,6 +7992,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17772510620748297154/E83229E3A6FEAD384DFB87AF2F5BBE8797E6EF66/",
         gmNotes: {
+            "color_identity": "order",
             "might": "2",
             "type": "unit",
             "rarity": 2,
@@ -7987,6 +8006,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12537184380437411305/D7D74F34C2D354EC023E3ED4F0F47C68FF0BF51C/",
         gmNotes: {
+            "color_identity": "order",
             "might": "9",
             "type": "unit",
             "rarity": 3,
@@ -8002,6 +8022,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11327097922305248055/F7986E7765997BDCFD6EC6AD509A209E172A0B69/",
         gmNotes: {
+            "color_identity": "order",
             "might": "5",
             "type": "unit",
             "rarity": 3,
@@ -8015,6 +8036,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9598987075745212151/EF33A4103154FA80DA84B3DFD9287AD8889676B6/",
         gmNotes: {
+            "color_identity": "order",
             "might": "6",
             "type": "unit",
             "rarity": 4,
@@ -8030,6 +8052,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15249347790562317607/07712E1D456B4D56065AA6B8178087E181FCAC6B/",
         gmNotes: {
+            "color_identity": "body",
             "might": "3",
             "type": "unit",
             "rarity": 1,
@@ -8043,6 +8066,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11217796447425343729/BA460ECA0AD73BE3E289A794A829B75D14CAF55D/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -8056,6 +8080,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16985455706843693049/80A540F29F55C5942511FAB05915AA87723A3F11/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "spell",
             "rarity": 3,
             "isSignature": false,
@@ -8069,6 +8094,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12124677885095449111/54E65BBD5913B5AC72E87FA5FDE1E9847A70F598/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -8082,6 +8108,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9777663010139206203/E90B249B704D089712FF9F2584CC48DCF062A90A/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -8095,6 +8122,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12951620927988381960/42ECCB5DACBF4495E0FB36237C4720D122E429B1/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 3,
             "isSignature": false,
@@ -8108,6 +8136,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15055139277526137057/452350BA92D00E42B3276BEE0EF49FA23BF04C1C/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 4,
             "isSignature": false,
@@ -8121,6 +8150,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14629725830007248268/9B6515614CF10B64B6950B78F913CB987F1BB01A/",
         gmNotes: {
+            "color_identity": "body",
             "type": "spell",
             "rarity": 3,
             "isSignature": false,
@@ -8134,6 +8164,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14395858168216297805/4FBD0A6AF76132E83122D78873A4CD019C727787/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 3,
             "isSignature": false,
@@ -8147,6 +8178,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10912731763328193419/14F3B5C38FAE1F21EA538EB2F611153FF5AAE835/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -8160,6 +8192,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12538717772108341771/4ACD3D61A09BF71A43A2359AE119C4DD9B699B66/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -8173,6 +8206,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17658160283039996245/7D70736E5DA1E68D4F31C04A027EAA4712F5CF18/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -8186,6 +8220,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9502349790055852007/DF9DB5C0D12325EE10DD69E7B9D92376CAB95CF1/",
         gmNotes: {
+            "color_identity": "order",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -8199,6 +8234,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14188518005676055429/0487B91095072CD38F94D6B59B4333ABC2A0515A/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "spell",
             "rarity": 3,
             "isSignature": false,
@@ -8212,6 +8248,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16400811268814000772/9B25DAEF64653D174232B7C21DA4D96A2538160D/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "spell",
             "rarity": 4,
             "isSignature": false,
@@ -8225,6 +8262,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11455235275989486470/9A69E21A7D7241948398A0BE6C77302D1BB9E8EA/",
         gmNotes: {
+            "color_identity": "order",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -8238,6 +8276,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12105776278065133606/B4146AFFC30AD199B66B6C0A05D40EB976177454/",
         gmNotes: {
+            "color_identity": "fury, order",
             "type": "spell",
             "rarity": 4,
             "isSignature": true,
@@ -8251,6 +8290,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15307950188158109285/B625CB627FDFAEA398D10676E34E49CA476335E0/",
         gmNotes: {
+            "color_identity": "fury, mind",
             "type": "spell",
             "rarity": 4,
             "isSignature": true,
@@ -8264,6 +8304,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13480048579230660306/B548FC9157621EEC00C4728CCBAE60EB4EB31FAF/",
         gmNotes: {
+            "color_identity": "calm, chaos",
             "type": "spell",
             "rarity": 4,
             "isSignature": true,
@@ -8277,9 +8318,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18393114677545184295/0C16EDE04D1908F77C809F9153F0E6C9C8132328/",
         gmNotes: {
+            "color_identity": "fury, order",
             "type": "spell",
             "rarity": 4,
-            "isSignature": false,
+            "isSignature": true,
             "isToken": false,
             "isCosmetic": false
         }
@@ -8290,6 +8332,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17263016013069412332/75580BD41D7C9792CCEF7FA202E5D6EB200D5445/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "gear",
             "rarity": 1,
             "isSignature": false
@@ -8301,6 +8344,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15264885513260091155/694B8C79F93BC2C7CCEBCF66D3E48A82AC1FC97E/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -8312,6 +8356,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13102273093464604919/A86FC31DB8DA009EC47706DC9B750C29760D2670/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -8323,6 +8368,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17105742378103032944/780DB9B859C250CAD540D0D1CAAAD4119BC6B5A8/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -8334,6 +8380,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10103638064011968401/A8B40657F68C5005B2B93F81F1DDE41F2B1D412F/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "gear",
             "rarity": 4,
             "isSignature": false
@@ -8345,6 +8392,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15063601570143056536/A3B13D2A83F781B3BDCE1A543A63A7491550E560/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -8356,6 +8404,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12760695603002082306/24DB9F3AD143BF96602955AD06BD5B680CD48CA5/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -8367,6 +8416,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15619678884053064517/737BC8D27C9F59D724B511E5B20631577AE5FAA6/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "gear",
             "rarity": 1,
             "isSignature": false
@@ -8378,6 +8428,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11769648444001816462/B178AD5EA106645D18CC6C53B1DD1F7BC7403B2E/",
         gmNotes: {
+            "color_identity": "body",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -8389,6 +8440,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16036727070403010913/49DB2A41BE13721F226AA230EE827C96F53F9797/",
         gmNotes: {
+            "color_identity": "body",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -8400,6 +8452,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17071511379424023433/ED374E16C42FDE513DA73CDE9EF162001CE9E2A7/",
         gmNotes: {
+            "color_identity": "body",
             "type": "gear",
             "rarity": 1,
             "isSignature": false
@@ -8411,6 +8464,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15488290405465636137/B43BD7A7309359CCFF41509DDEEAE0EF7EDA8B54/",
         gmNotes: {
+            "color_identity": "body",
             "type": "gear",
             "rarity": 4,
             "isSignature": false
@@ -8422,6 +8476,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17116585320764163953/0C6DE4216EA71D0093B76B3AF271B6C782C3C839/",
         gmNotes: {
+            "color_identity": "body",
             "type": "gear",
             "rarity": 4,
             "isSignature": false
@@ -8433,6 +8488,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17661871203116718373/0085F10081190A7698CB559BF0E1333A567893E6/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "gear",
             "rarity": 1,
             "isSignature": false
@@ -8444,6 +8500,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13667218941433651910/A1B6582BAF0F87240B0F4E2F0AC69519450387C1/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -8455,6 +8512,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13859378581054643918/F363E7E9C99B27E81A6F74E75912BDF773CA3CDB/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "gear",
             "rarity": 4,
             "isSignature": false
@@ -8466,6 +8524,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9731535300420848399/3A43354AA581AB7FB58BDCD29CB0796D1BC4F52C/",
         gmNotes: {
+            "color_identity": "order",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -8477,6 +8536,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16168949269864244766/13171857A8B435C6FC995671AD7F16757331FD14/",
         gmNotes: {
+            "color_identity": "order",
             "type": "gear",
             "rarity": 2,
             "isSignature": false,
@@ -8490,6 +8550,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13527571569219855516/F0127615BBB9A0A9965038375A5A535C26A3EDC0/",
         gmNotes: {
+            "color_identity": "order",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -8501,6 +8562,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18053570162393168319/A73F1A9F602172E44963C5B2E6A2806C4CA55DFE/",
         gmNotes: {
+            "color_identity": "order",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -8512,6 +8574,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18211338872811149146/1DC8D055B8CA1CCE33D42F77F96535B82CC1901C/",
         gmNotes: {
+            "color_identity": "order",
             "type": "gear",
             "rarity": 4,
             "isSignature": false
@@ -8523,9 +8586,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14783853556004723331/BF4946F3F8080C2B2637A688EC4DD4B4805492D3/",
         gmNotes: {
+            "color_identity": "fury, chaos",
             "type": "gear",
             "rarity": 4,
-            "isSignature": false
+            "isSignature": true
         }
     },
     "SFD-020-1": {
@@ -8534,6 +8598,7 @@ const cards = {
         description: "When I win a combat, gain a Gold gear token exhausted. When I attack or defend, you pay 1 Fury Power. If you do, give me +2 Might.",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11976862578256857122/3634FEBD9E4122C14FD530BB6AED874C274FDB36/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8550,6 +8615,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11660135299956398428/F3A20D73BB15A29B41597F1CBBC2CD8AD89819DE/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8564,6 +8630,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14851412926962524498/4BE58D80938CAC2EA8E992CD54F372FEB5B858A6/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8578,6 +8645,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12547464219067938501/9D3674150851D24901639D43DC07CCF4F8047195/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8592,6 +8660,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17703513401541362663/FC47BEC1187CCA3F505C7B47026C6BCEA34D6BBC/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "6",
             "type": "unit",
             "isSignature": true,
@@ -8606,6 +8675,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10385265421863785621/340B5F16AA53120A95378EFDBC55AD1B0C5C17C5/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "6",
             "type": "unit",
             "isSignature": true,
@@ -8620,6 +8690,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12559185619380407199/A2CA6A26EB245400915B69ED459A4627FFBFF306/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -8634,6 +8705,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15597466862189390474/F6787B5D60EC8B04E3A4173F8AF95DFA42CC85E4/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -8648,6 +8720,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11945162678230135754/C309EF6F0CCA47A990ED586119636B96BB5BABC0/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8662,6 +8735,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10999816032160603530/6C67B5FB5D8AA50AD7F19DB6F99837E919B07032/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8676,6 +8750,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9794272240251045926/1CE40D6851F0E8E596376C0664BFE51D87C2BE30/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8690,6 +8765,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10782099526300311348/4659DAAD445A7B8841A52F471FD0DFB7F890FB82/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8704,6 +8780,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17019050746246942484/9A0759F4B08A5F7716457B953CA8D064D4C168A2/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -8718,6 +8795,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12254969876965309022/83DD98D69FB7FA47DAC3006721A84F83E542335A/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -8732,6 +8810,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17484939601822672321/90C27F8FF04E09E20CC2F0B7CA90091798A6A1C0/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8746,6 +8825,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9416662796995722430/D30F69327D3E05EDC03CCD4FBBEA16A559F548B0/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8760,6 +8840,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18247061069852586154/EAF5F8ACF55CC70178DC00452625BBC7848B7B05/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8774,6 +8855,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16595942830209436476/C65CD4A21D1DFB899D235C1BA76E1045BEC78E03/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8788,6 +8870,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13723454533340174861/4F0189F49E6CC85000FD0CCEF6CE56419B618B5C/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8802,6 +8885,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10542702184313567157/41FB0691CE6501C9FA35CD28FE7FB158BB66C366/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8816,6 +8900,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15340266526775875387/BF909045B7899D1C4059D09FEC540415DFBA04B3/",
         gmNotes: {
+            "color_identity": "body",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8830,6 +8915,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9601002932179727564/5A5843C3CC7A78F99CCDF5C5AE4ECF964EC19D19/",
         gmNotes: {
+            "color_identity": "body",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8844,6 +8930,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11156336204487311316/E95580AEC9A6FBD08EEBF9220F5D4EC1B8C491C0/",
         gmNotes: {
+            "color_identity": "body",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -8858,6 +8945,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13955025142630853298/D6E3E22FB1017D236C2DCDBFFCDFE81567C97BED/",
         gmNotes: {
+            "color_identity": "body",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -8872,6 +8960,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10419685753061307638/B1586F2C3583D2051F2D0CD31B8D4E6DB9487A87/",
         gmNotes: {
+            "color_identity": "body",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -8886,6 +8975,8 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10000045267325611069/0FECB1F18E67F550623FAD9509631E01969EDA76/",
         gmNotes: {
+            "color_identity": "body",
+            "color_identity": "body",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8900,6 +8991,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17426111380238038738/87235FC661F32A20F7E3F81DDCAC0C0AE764393F/",
         gmNotes: {
+            "color_identity": "body",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8914,6 +9006,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12881856184058080944/09721FFC7DD045B5642292849CE2903A873D1E5F/",
         gmNotes: {
+            "color_identity": "body",
             "might": "7",
             "type": "unit",
             "isSignature": true,
@@ -8928,6 +9021,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17398648833261027444/625B8144ECA22171A389FB54F0A00D98EEC36457/",
         gmNotes: {
+            "color_identity": "body",
             "might": "7",
             "type": "unit",
             "isSignature": true,
@@ -8942,6 +9036,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14145868216568413869/40A975F9EE3CB2A0CACFB04D1C3F20EF2EF7CF01/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -8956,6 +9051,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17035459969882330039/78A696CA304D843EC8647312C57D069ED6446FCF/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8970,6 +9066,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11661794330187509421/7D155150C68ADC317C46F4DC5FD3D989B24D6FDF/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8984,6 +9081,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15176297349195833957/1A007754AB986FCC5CA277463893AC8187FBF392/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -8998,6 +9096,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10399118082755640143/F045F500F9F5C80EBB1E2D514C8ED517F831EC94/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "6",
             "type": "unit",
             "isSignature": true,
@@ -9012,6 +9111,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16289782264170978589/0CEF5958E373263DA6D77973428291695919074D/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "6",
             "type": "unit",
             "isSignature": true,
@@ -9026,6 +9126,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12587483244092537277/2C8756CC9F45F0F0452E5F36F4A0E0F166AF3F61/",
         gmNotes: {
+            "color_identity": "order",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -9040,6 +9141,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14509155327213433955/42BDE088D00DB076A9A4BA6435CD82CAFAE0FBBB/",
         gmNotes: {
+            "color_identity": "order",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -9054,6 +9156,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16325013226093283123/8AA84AA14BAD139A07186D4531AC7E7D6F1A30E4/",
         gmNotes: {
+            "color_identity": "order",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -9068,6 +9171,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9371986981166026421/0474D3CDDC150A5F89291523E8BE0A610A05EA3D/",
         gmNotes: {
+            "color_identity": "order",
             "might": "5",
             "type": "unit",
             "isSignature": true,
@@ -9082,6 +9186,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12630317449460658971/D8548C657945A6F9B0D5754A4586B797CD30D7D0/",
         gmNotes: {
+            "color_identity": "order",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -9096,6 +9201,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11379813900065696398/C7E2A78C97FC80072038D4DA900B82932AF347BE/",
         gmNotes: {
+            "color_identity": "order",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -9110,6 +9216,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13411656909714973845/8A771A23BB54C964167688B893EFBB0A35248CD8/",
         gmNotes: {
+            "color_identity": "order",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -9124,6 +9231,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16806011506188205891/4A5EB4FD0F26BBEF227597FB57F06B9B6241D76B/",
         gmNotes: {
+            "color_identity": "order",
             "might": "3",
             "type": "unit",
             "isSignature": true,
@@ -9138,6 +9246,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15671976042612161812/343A55FDC3ECFD73BEECC7429CA2B5000CB47FC3/",
         gmNotes: {
+            "color_identity": "order",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -9152,6 +9261,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13637665737383586958/FC09A8AF4C3AD5512D798EECEF1D533E6B99EA95/",
         gmNotes: {
+            "color_identity": "order",
             "might": "4",
             "type": "unit",
             "isSignature": true,
@@ -9166,6 +9276,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11310748513297684216/4878455978CCA1A476A4CD299DFE9A05A486CCCF/",
         gmNotes: {
+            "color_identity": "fury, mind",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9181,6 +9292,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15202078727719440176/A4785DBD81E644E893BDFD3289FDC49C5BAB5C4E/",
         gmNotes: {
+            "color_identity": "fury, mind",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9196,6 +9308,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13717297410493842605/E08F5E4D120E969364064F755CE9FD7384172B3A/",
         gmNotes: {
+            "color_identity": "calm, order",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9213,6 +9326,7 @@ const cards = {
         description: "",
         image: "https://images2.imgbox.com/71/a9/5U4Izik2_o.png",
         gmNotes: {
+            "color_identity": "calm, order",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9230,6 +9344,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17150358588654910326/20EA00F16EAA645168F002B2D0C0748D149BB75B/",
         gmNotes: {
+            "color_identity": "mind, chaos",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9245,6 +9360,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16796673047055684315/7D489F6E57C247310C9F628773CA9C9BE150EF4F/",
         gmNotes: {
+            "color_identity": "mind, order",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9262,6 +9378,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14075417363891900827/586E699586D9643D201FF9EC81F977DCE8196D2B/",
         gmNotes: {
+            "color_identity": "body, chaos",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9279,6 +9396,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13902199319779742615/8D062611DE8D312D7F18D72521F813B335EA714E/",
         gmNotes: {
+            "color_identity": "body, order",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9294,6 +9412,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15725015903697886063/23943F3AD8A34778A77A5A077602F34EFD15E495/",
         gmNotes: {
+            "color_identity": "body, order",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9309,6 +9428,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13547297965450379164/B3DFDA290B45DBA5DEF56B1D85E01E2DF60BBC2D/",
         gmNotes: {
+            "color_identity": "fury, body",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9324,6 +9444,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9694739922082868110/BA52D96A7C5FF98160C656F5D9C7AFD6C2DE94A6/",
         gmNotes: {
+            "color_identity": "fury, body",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9339,6 +9460,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14381893564454079650/F2D0504B671E50DAA893F255424F5DD0132B9BF6/",
         gmNotes: {
+            "color_identity": "fury, chaos",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9354,6 +9476,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14054879612719296392/4AFB4C3A10ED224499073278A78C13FE66D6EB02/",
         gmNotes: {
+            "color_identity": "fury, chaos",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9369,6 +9492,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13656251467689400725/A19F75A04168229CEA55B28C3BF630D3D12A61A6/",
         gmNotes: {
+            "color_identity": "fury, order",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9384,6 +9508,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10721548500760478827/4ED8F623E80CD4A25FC8AAF8460B8DF3747693CB/",
         gmNotes: {
+            "color_identity": "fury, order",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9399,6 +9524,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16530890720838968979/59DA39121380011F167F8A3D67F19C434C9449A6/",
         gmNotes: {
+            "color_identity": "calm, mind",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9414,6 +9540,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13638076388971064554/DE5C870A5D13994C8003A7E93B7507FD0FC31E8C/",
         gmNotes: {
+            "color_identity": "calm, mind",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9429,6 +9556,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17141540485663092388/58CF8749A948804CFBEC15056DB3CA164A98C324/",
         gmNotes: {
+            "color_identity": "calm, chaos",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9444,6 +9572,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13636453029414502233/D77C4BF76F5B514CC2993D6051D88E612E8EE074/",
         gmNotes: {
+            "color_identity": "calm, chaos",
             "type": "legend",
             "rarity": 4,
             "isSignature": false,
@@ -9459,6 +9588,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17794003351465362540/A41389511734E78916AE3662FD69B8C3B1E7A1C9/",
         gmNotes: {
+            "color_identity": "calm, body",
             "type": "legend",
             "rarity": 3,
             "isSignature": false,
@@ -9474,6 +9604,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11508989262282606359/693B3076CB5EB1B3281B51A5731F4FEC69DA123E/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -9488,6 +9619,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12626925942848011880/EDF070FE8D853CFCBB8DC0E8993AF48F96835CF6/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -9502,6 +9634,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9689318044584908550/7AB1473C1D747CDDB443C025472A6B5696098F2B/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -9516,6 +9649,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18004710182243822656/2F652DF43E16C68D9C5F4FBDD8A1E5CB39A6E807/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -9532,6 +9666,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13242438598313593062/A164615A9C14BA81313F4562AB699B360E89A9E4/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "3",
             "rarity": 4,
             "type": "unit",
@@ -9546,6 +9681,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17400778637806576694/7834237EEA92F05AD9E735894DDB6EAEBB8A7945/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "2",
             "rarity": 4,
             "type": "unit",
@@ -9560,6 +9696,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9571451778551993242/29E7C9C9E9DD67FC4125FFF6C3C83B9D8180856D/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "4",
             "rarity": 3,
             "type": "unit",
@@ -9574,6 +9711,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16584135375243126307/52DFB41B2CC4280D50F9782A984A027B47041050/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "4",
             "rarity": 4,
             "type": "unit",
@@ -9588,6 +9726,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16463098572731122265/35BA056BA1A20CDB04A4BC6044BA8AA5F7997B64/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "4",
             "rarity": 4,
             "type": "unit",
@@ -9602,6 +9741,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10599816584882382115/B2971B4D22CD438A6131EA4E48DBAFF4AB7DE156/",
         gmNotes: {
+            "color_identity": "body",
             "might": "3",
             "rarity": 3,
             "type": "unit",
@@ -9616,6 +9756,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16068827249613162355/54672D38BA00737113266472037D25605425014B/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "rarity": 1,
             "type": "unit",
@@ -9629,6 +9770,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12490982555363658873/A3B2D3DCC058FB0E4F066561F641D30D6128BF84/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "3",
             "rarity": 3,
             "type": "unit",
@@ -9643,6 +9785,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15155918821770279959/E871CB957FB8D98487E29FF632DA225A63A65A47/",
         gmNotes: {
+            "color_identity": "body",
             "might": "7",
             "rarity": 2,
             "type": "unit",
@@ -9657,6 +9800,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15310044431349764894/6F7C740517576A1E113DC841070DF6E19ACC5BEE/",
         gmNotes: {
+            "color_identity": "body",
             "might": "4",
             "rarity": 3,
             "type": "unit",
@@ -9671,6 +9815,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16861744286642742258/50F465C7B8D5587C4B8ADEBC4E254E8C54A5B115/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "rarity": 3,
             "type": "unit",
@@ -9685,6 +9830,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12683472216376803836/672B5CDD84D155CD4E1C60676C728604E3521C29/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "3",
             "rarity": 4,
             "type": "unit",
@@ -9699,6 +9845,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12973985076209156358/5A34B90A2C89B4E2D3D3F2A86159B8D54D0F3212/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "5",
             "rarity": 2,
             "type": "unit",
@@ -9712,6 +9859,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17974573406768183366/857349350EB6CBABC2151680AFFB3C6DE5E6D61F/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "2",
             "rarity": 2,
             "type": "unit",
@@ -9725,6 +9873,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18415962971033313482/2C4D9FB4F0709E52C2C5D22AA7AC5D7DFBA5D403/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "5",
             "rarity": 2,
             "type": "unit",
@@ -9738,6 +9887,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10817401593617980397/10ACB66066A179C5342DC60645C4DF565625CEB1/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "5",
             "rarity": 2,
             "type": "unit",
@@ -9751,6 +9901,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18352451531458731307/BCA8764CF84A4C27DAE337A58D45FC541BE72532/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "5",
             "rarity": 1,
             "type": "unit",
@@ -9764,6 +9915,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16380215935920874588/6E7E1C6D3E71AC68A896149068F270D6D073C215/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "3",
             "rarity": 1,
             "type": "unit",
@@ -9777,6 +9929,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18118698198480384402/0A7F4F172F3A7214C2240F71C4BE804A885424E6/",
         gmNotes: {
+            "color_identity": "fury",
             "might": "6",
             "rarity": 1,
             "type": "unit",
@@ -9790,6 +9943,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12303385499581009995/9524EA70763F2312BE83F4FB6618DF7F42FF98AB/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "2",
             "rarity": 1,
             "type": "unit",
@@ -9803,6 +9957,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16889442281203690053/C4E51FFE0521FCE36CD44B036DD03EBAFE108629/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "6",
             "rarity": 1,
             "type": "unit",
@@ -9816,6 +9971,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15539720013260055136/7A5F2A29F6EAF76D21533378C9FA4544FFAD7609/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "2",
             "rarity": 1,
             "type": "unit",
@@ -9829,6 +9985,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14851932662733483376/9AC5B960F8E59076612FF23BAE826CCB577A0C7A/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "5",
             "rarity": 2,
             "type": "unit",
@@ -9842,6 +9999,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12511074682272064403/55215CA8653AFD28B2740BB15401802A6FAFA0BE/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "2",
             "rarity": 2,
             "type": "unit",
@@ -9855,6 +10013,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10443320163402090777/E4C2A26ACF76EDBABEA4BAADA1D7F4173CD8C6C9/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "4",
             "rarity": 1,
             "type": "unit",
@@ -9868,6 +10027,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13262050596123048168/084F56413FF869D388389A9D7F3B6DA9EE8ACA89/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "3",
             "rarity": 1,
             "type": "unit",
@@ -9881,6 +10041,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11294456308567374081/154E5605C2D72A2A4C81EDF75CE203C27AFEC288/",
         gmNotes: {
+            "color_identity": "calm",
             "might": "4",
             "rarity": 2,
             "type": "unit",
@@ -9894,6 +10055,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10585942995824420742/11AB40AB9EF47199ABDDA5DDBD3F9CAC8A077E6C/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "2",
             "rarity": 1,
             "type": "unit",
@@ -9907,6 +10069,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10949841014023762069/040B58089CCF7E0025D6E76498C472BEE324E574/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "rarity": 3,
             "type": "unit",
@@ -9922,6 +10085,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13144858578539904834/B97BCC7497ECCC2B63C04FDA214AC66810E5A162/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "4",
             "rarity": 2,
             "type": "unit",
@@ -9935,6 +10099,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11550461771322208250/C48F465613D50F89A140CCDCA7BC9A8AD0BFF853/",
         gmNotes: {
+            "color_identity": "mind",
             "might": "3",
             "rarity": 2,
             "type": "unit",
@@ -9948,6 +10113,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13108333781079714046/E5C4C5352CEB98D4A71875D88AAE6FDCC3D849C0/",
         gmNotes: {
+            "color_identity": "body",
             "might": "5",
             "rarity": 1,
             "type": "unit",
@@ -9961,6 +10127,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10120899257607360369/EED710A34026AC57974F0FA890A5FC92BF338C00/",
         gmNotes: {
+            "color_identity": "body",
             "might": "7",
             "rarity": 1,
             "type": "unit",
@@ -9974,6 +10141,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14917694238658906543/2CCB5CB2EC18D5917C7B0590C8B5DC8B2D2010DD/",
         gmNotes: {
+            "color_identity": "body",
             "might": "3",
             "rarity": 1,
             "type": "unit",
@@ -9987,6 +10155,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12582725919673877568/86B57F3878F3AFAF8A3DBA164AFFE510F1155852/",
         gmNotes: {
+            "color_identity": "body",
             "might": "2",
             "rarity": 1,
             "type": "unit",
@@ -10000,6 +10169,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11691577403731582657/803ACBF514A1553DD76DE44D9F165955CB3C4D24/",
         gmNotes: {
+            "color_identity": "body",
             "might": "5",
             "rarity": 2,
             "type": "unit",
@@ -10013,6 +10183,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11559750698050883744/C8D23F689A60E6BBC8BCF8B3ABFD5557999A42C8/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "3",
             "rarity": 1,
             "type": "unit",
@@ -10026,6 +10197,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12307925184342227272/0EE6FC8B85E9397985D13D0B8FFB5574C654982A/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "rarity": 1,
             "type": "unit",
@@ -10039,6 +10211,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17327418077924844664/457659D457BA6EDF1B852FAE62A3A99D1879A2DB/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "rarity": 1,
             "type": "unit",
@@ -10052,6 +10225,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13455627853280723917/3117963D365B2435962F01762DCACA43382595DD/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "rarity": 2,
             "type": "unit",
@@ -10065,6 +10239,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13699504078243094074/E85D57F50F750E189D28EA900A2FA189D8AB43B7/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "6",
             "rarity": 1,
             "type": "unit",
@@ -10078,6 +10253,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14459466050356969827/40F655C4170F4383461754FDDC2C72DB0CC25ABD/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "4",
             "rarity": 2,
             "type": "unit",
@@ -10091,6 +10267,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16383033631124408644/565A44BC1872B51C26F34170DF95229F6849AABD/",
         gmNotes: {
+            "color_identity": "chaos",
             "might": "8",
             "rarity": 2,
             "type": "unit",
@@ -10104,6 +10281,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16977224296111103851/EA2C5DBF587016464D81A8871449E238CAA8992F/",
         gmNotes: {
+            "color_identity": "order",
             "might": "5",
             "rarity": 1,
             "type": "unit",
@@ -10117,6 +10295,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12180093279684876351/1F5B70E417B8B0E138D69E5B4E4877DDE86EF1B4/",
         gmNotes: {
+            "color_identity": "order",
             "might": "3",
             "rarity": 1,
             "type": "unit",
@@ -10130,6 +10309,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10895126171619140034/92150BFA63013A9A7EAE8B14DA522E23078AF277/",
         gmNotes: {
+            "color_identity": "order",
             "might": "6",
             "rarity": 1,
             "type": "unit",
@@ -10143,6 +10323,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17714481280753170824/95C1E91041D82B1B757BB8A4A67B3CAF183AF54A/",
         gmNotes: {
+            "color_identity": "order",
             "might": "3",
             "rarity": 1,
             "type": "unit",
@@ -10156,6 +10337,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10252955555651409905/5BEAD5597EF516A5D7D16CEE49018F9B01717935/",
         gmNotes: {
+            "color_identity": "order",
             "might": "2",
             "rarity": 1,
             "type": "unit",
@@ -10169,6 +10351,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14935166945581568347/953172CB5AFFF6C22D9357393C41ECA7DD873E08/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -10180,6 +10363,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11484902365697889174/4D02DE8CE31D618AB405FA3CAFC6F25107CBC5C6/",
         gmNotes: {
+            "color_identity": "order",
             "type": "gear",
             "rarity": 1,
             "isSignature": false
@@ -10191,6 +10375,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12385437461705381126/2B860665E7947E93A4F855D6AF72B40EB6262D6A/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -10202,6 +10387,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9955759566135883038/328F215A86FBE3905565F1CE86195F4ECB6827F1/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -10213,6 +10399,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15651617930003979912/C30D56EE0C0A04A8FA31B2B901EE5422922B1B11/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -10224,6 +10411,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17521786561996632518/F8378D0FAE7A7FD0EE0085518CF81D08BC438673/",
         gmNotes: {
+            "color_identity": "body",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -10235,6 +10423,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16429120261676437031/72CB20A9C496A5AA650D12596079D869139587F0/",
         gmNotes: {
+            "color_identity": "body",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -10246,6 +10435,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17115882634864431117/C53E0EDB505C2C2D367C806A1B8B9BC85249A8AE/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "gear",
             "rarity": 4,
             "isSignature": false
@@ -10257,6 +10447,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11586969870402204641/33CF97A06436915A72D24B5693C6F3903F204A74/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -10268,6 +10459,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15123775031974508665/C96653626853978FBD16459585B56D48358231D4/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "gear",
             "rarity": 1,
             "isSignature": false
@@ -10279,6 +10471,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13952282598672586343/A40A2CDECC6BAEB3540A7FC08EBE777161632842/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -10290,6 +10483,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16180108246619308025/D05EAA811793ED8B0747FE33398FDFCEC613DD3D/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -10301,6 +10495,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16466315848096444240/6278773EC98E7079D17489651B23B04C346788E6/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "gear",
             "rarity": 3,
             "isSignature": false
@@ -10312,6 +10507,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9712280095976393840/B29526394DB9D70CF48860B7A03B0C10DFE7154B/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "gear",
             "rarity": 1,
             "isSignature": false
@@ -10323,6 +10519,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16938820867119584289/CC7A78BAA919D9612CA71FC6DA1251F39382E996/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "gear",
             "rarity": 2,
             "isSignature": false
@@ -10334,6 +10531,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12962710942987474766/53A6C5245741F5ECC8E2F0A626E3A2B3D3460819/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "gear",
             "rarity": 4,
             "isSignature": false
@@ -10345,9 +10543,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12596986452029406666/0805029B5C6812ECBC30C0898E5D8CF137F21DE6/",
         gmNotes: {
+            "color_identity": "calm, mind",
             "type": "gear",
             "rarity": 4,
-            "isSignature": false
+            "isSignature": true
         }
     },
     "SFD-191-1": {
@@ -10356,9 +10555,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12326386756791076857/4484FF5841BC14036136133E9FAA022974F31343/",
         gmNotes: {
+            "color_identity": "calm, mind",
             "type": "gear",
             "rarity": 4,
-            "isSignature": false
+            "isSignature": true
         }
     },
     "SFD-192-1": {
@@ -10367,9 +10567,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14416529581136469451/7793D9ADA63AA757ED98557CF434412A54D06B9C/",
         gmNotes: {
+            "color_identity": "calm, mind",
             "type": "gear",
             "rarity": 4,
-            "isSignature": false
+            "isSignature": true
         }
     },
     "SFD-206-1": {
@@ -10378,9 +10579,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12398223556975693122/5C5BEB3422D76FD7207EFC4517387FDBF28B400C/",
         gmNotes: {
+            "color_identity": "body, order",
             "type": "spell",
             "rarity": 4,
-            "isSignature": false,
+            "isSignature": true,
             "isToken": false,
             "isCosmetic": false
         }
@@ -10391,9 +10593,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17831606772172479185/9DAF8C8123AC3AB426262BBA0DBF47E24EBA8B70/",
         gmNotes: {
+            "color_identity": "body, chaos",
             "type": "spell",
             "rarity": 4,
-            "isSignature": false,
+            "isSignature": true,
             "isToken": false,
             "isCosmetic": false
         }
@@ -10404,9 +10607,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/17328704561587106635/1949EE1A0ECBA97584657971C4BF0A199637AD79/",
         gmNotes: {
+            "color_identity": "mind, order",
             "type": "spell",
             "rarity": 4,
-            "isSignature": false,
+            "isSignature": true,
             "isToken": false,
             "isCosmetic": false
         }
@@ -10417,9 +10621,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15502941898116160552/BF8089336200C9D26A37FDD59E0A9E7185CC0A2C/",
         gmNotes: {
+            "color_identity": "calm, body",
             "type": "spell",
             "rarity": 4,
-            "isSignature": false,
+            "isSignature": true,
             "isToken": false,
             "isCosmetic": false
         }
@@ -10430,9 +10635,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14368519582104198154/8D4B6FAA7D1F9D02093E9DA4C9B2128151F31382/",
         gmNotes: {
+            "color_identity": "calm, order",
             "type": "spell",
             "rarity": 4,
-            "isSignature": false,
+            "isSignature": true,
             "isToken": false,
             "isCosmetic": false
         }
@@ -10443,9 +10649,10 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9317234474670561658/8DB10ED3470D08A87CF27AAD19109AE8DD106AFB/",
         gmNotes: {
+            "color_identity": "mind, chaos",
             "type": "spell",
             "rarity": 4,
-            "isSignature": false,
+            "isSignature": true,
             "isToken": false,
             "isCosmetic": false
         }
@@ -10456,6 +10663,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9243360497234800055/A906588993AE0000A68DDF252C62088DADB32D24/",
         gmNotes: {
+            "color_identity": "order",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10469,6 +10677,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/18135450008545751822/699E001E59A2451B9C717DE30BA178FA2056D901/",
         gmNotes: {
+            "color_identity": "order",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10482,6 +10691,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12625206824929553961/396D868B6BF1759779496736F2A1E4E7B1360CF5/",
         gmNotes: {
+            "color_identity": "order",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10495,6 +10705,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12362164124654034328/C4EDF5897EE26D3A6BF0CFF8D80890732C5B93A6/",
         gmNotes: {
+            "color_identity": "order",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10508,6 +10719,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16723791185304918949/49ADE5B22BF503118C926E71CF6EE0486661B6B6/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10521,6 +10733,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11739049861725654940/5B26235E917FFA908E3B0624344BB520C5D692E4/",
         gmNotes: {
+            "color_identity": "chaos",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10534,6 +10747,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11799986082834378249/2784D48F53DE07829D84FF78E39784C39C738D50/",
         gmNotes: {
+            "color_identity": "body",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10547,6 +10761,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15557006823770721559/2CA49841683E2B0AE30D375926951B37EC57AA6B/",
         gmNotes: {
+            "color_identity": "body",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10560,6 +10775,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9285907108508683215/C33702E3956963768373751FF6EE3A35BE958400/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10573,6 +10789,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12141435782691647535/83AAE8FFEC9B66E216916A28A0AE73EA29241D48/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10588,6 +10805,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11751992809498166281/54EBA8B309DB82054E50D0181956127D7B321521/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10601,6 +10819,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13850719597536549916/885BE43863C2F502C63759EDC5434FA398971932/",
         gmNotes: {
+            "color_identity": "mind",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10614,6 +10833,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13667137808806172441/9C2702D50AAE634D7EDB0C5F9C92FE9F62555C70/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10627,6 +10847,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10674192221950096096/67DC7563945DEA6FF7C0B652E3DA8A7143388233/",
         gmNotes: {
+            "color_identity": "calm",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10640,6 +10861,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9698148463191714398/0510DA5C52AF268ABE2570A34063224597A7FAA0/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10653,6 +10875,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11321326798529791587/909861D111B7F8BCB55DF75749FD4896D238DED9/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10666,6 +10889,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14852196439443496131/94FE1E17CEDB3ECF875AE0125CA8E830D9A0CD19/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "spell",
             "rarity": 1,
             "isSignature": false,
@@ -10679,6 +10903,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13829329495282264493/FEDA278096F385C4309A5B75AF542C440AF73B70/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10692,6 +10917,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14142703221583450132/90EC73153D9078F51F0C3EB751E191003D322502/",
         gmNotes: {
+            "color_identity": "fury",
             "type": "spell",
             "rarity": 2,
             "isSignature": false,
@@ -10705,6 +10931,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12089680294637007049/F832B59F65CA098414A6AAD5D32D3EC021CCF65B/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10719,6 +10946,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/15216287864581569614/6D960B936D8C8635135BD2B605A2240BBD23076B/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10733,6 +10961,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16282556708921833145/B052C99B86A7FC79A564944C5BF363D1EAB60CB2/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10747,6 +10976,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16261176602584647612/96F47DAA9CCF89EE4655BA732282A74CDE132FAD/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10761,6 +10991,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12519376594671252312/A17942E5F4D0AAE94916AA6D170806CE6A44CD72/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10775,6 +11006,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13110253815737620290/E378F51A7352614B8322039A2E5F817C3C47E029/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10789,6 +11021,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/12510481510154445029/F95A1413DFF9F8823C8DA95A16F109EBD02AA311/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10803,6 +11036,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/13843915823064794017/76FEB99143F63E7594F1D5AB686E89CDFC0BD7C5/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10817,6 +11051,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/16995849506531330820/A42A851475AFEB44D3725C6C9CADDD455900B612/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10831,6 +11066,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/11163150371961472332/88A6D14A77F96C9EFFD5C3323B29DFDDF05AA6C3/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
@@ -10845,6 +11081,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/10402270506297986006/DAFA2A5FBCA96065FDC5521FC919FE88E9CDB6A8/",
         gmNotes: {
+            "color_identity": "grey",
             "type": "battlefield",
             "rarity": 2,
             "battlefield_image": "https://steamusercontent-a.akamaihd.net/ugc/17072502246278371407/BE3E821A508C48E22CDA5CE79E392959FAF7393A/",
