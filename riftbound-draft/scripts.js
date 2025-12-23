@@ -11245,14 +11245,12 @@ function rollRarity(table) {
 function updateRuneCount(card, add) {
     const count = card.querySelector(".rune-count");
     const countNum = parseInt(count.getAttribute("data-count"));
-    if (countNum > 0) {
-        if (add) {
-            count.innerHTML = parseInt(count.dataset.count) + 1;
-            count.setAttribute("data-count", parseInt(count.dataset.count) + 1);
-        } else {
-            count.innerHTML = parseInt(count.dataset.count) - 1;
-            count.setAttribute("data-count", parseInt(count.dataset.count) - 1);
-        }
+    if (add) {
+        count.innerHTML = parseInt(count.dataset.count) + 1;
+        count.setAttribute("data-count", parseInt(count.dataset.count) + 1);
+    } else if (countNum > 0) {
+        count.innerHTML = parseInt(count.dataset.count) - 1;
+        count.setAttribute("data-count", parseInt(count.dataset.count) - 1);
     }
     if (parseInt(count.dataset.count) > 0) {
         if (!count.classList.contains("has-count")) {
