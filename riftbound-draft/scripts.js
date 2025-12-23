@@ -11148,8 +11148,8 @@ const cardBackImg = "https://steamusercontent-a.akamaihd.net/ugc/400659186395917
 const cardsArray = Object.values(cards);
 const PACKS_KEY = "riftbound_packs";
 const DECK_KEY = "draft_deck";
+const RUNE_KEY = "rune_deck";
 const delay = ms => new Promise(res => setTimeout(res, ms));
-const playerArea = document.querySelector(".player-area");
 const packAmount = document.querySelector(".pack-amount");
 const activeColourFilters = new Set();
 
@@ -11161,7 +11161,7 @@ function cardsByRarity(rarity) {
 }
 
 function manaCards() {
-    return cardsArray.filter((c) => c.gmNotes?.isToken);
+    return cardsArray.filter((c) => c.gmNotes?.type === "rune");
 }
 
 function pickRandom(pool) {
@@ -11172,41 +11172,43 @@ function pickRandom(pool) {
     return pool[Math.floor(Math.random() * pool.length)];
 }
 
-function loadSavedDeck() {
+function loadSavedDeck(key = DECK_KEY) {
     try {
-        const raw = localStorage.getItem(DECK_KEY);
+        const raw = localStorage.getItem(key);
         return raw ? JSON.parse(raw) : [];
     } catch {
         return [];
     }
 }
 
-function saveCardToDeck(card, packNum) {
-    const deck = loadSavedDeck();
+function saveCardToDeck(card, packNum, key = DECK_KEY) {
+    const deck = loadSavedDeck(key);
     packNum = parseInt(packNum);
     if (packNum >= 0) {
         const pack = deck[packNum] ?? [];
         pack.push(card);
         deck[packNum] = pack;
-        localStorage.setItem(DECK_KEY, JSON.stringify(deck));
+        localStorage.setItem(key, JSON.stringify(deck));
         updateTts();
     }
 }
 
-function removeCardFromDeck(cardId, packNum) {
-    const deck = loadSavedDeck();
+function removeCardFromDeck(cardId, packNum, key = DECK_KEY) {
+    const deck = loadSavedDeck(key);
     packNum = parseInt(packNum);
     const i = deck[packNum].indexOf(cardId);
     if (i > -1) {
         deck[packNum].splice(i, 1);
     }
-    localStorage.setItem(DECK_KEY, JSON.stringify(deck));
+    localStorage.setItem(key, JSON.stringify(deck));
 
     updateTts();
 }
 
 function clearSavedDeck() {
     localStorage.removeItem(DECK_KEY);
+    localStorage.removeItem(RUNE_KEY);
+    localStorage.removeItem(PACKS_KEY);
 }
 
 function loadSavedPacks() {
@@ -11224,13 +11226,10 @@ function savePack(pack) {
     localStorage.setItem(PACKS_KEY, JSON.stringify(packs));
 }
 
-function clearSavedPacks() {
-    localStorage.removeItem(PACKS_KEY);
-}
-
 function updateCardCount() {
-    let packNum = parseInt(loadSavedDeck().flat().length);
-    packAmount.innerHTML = "Cards (" + packNum + ")";
+    let cardNum = parseInt(loadSavedDeck().filter(e => {return e != null}).flat().length);
+    let runeNum = parseInt(loadSavedDeck(RUNE_KEY).filter(e => {return e != null}).flat().length);
+    packAmount.innerHTML = "Cards (" + cardNum + ") <br/> Runes (" + runeNum + ")";
 }
 
 function rollRarity(table) {
@@ -11240,6 +11239,25 @@ function rollRarity(table) {
     for (const [rarity, chance] of table) {
         total += chance;
         if (roll < total) return rarity;
+    }
+}
+
+function updateRuneCount(card, add) {
+    const count = card.querySelector(".rune-count");
+    if (add) {
+        count.innerHTML = parseInt(count.dataset.count) + 1;
+        count.setAttribute("data-count", parseInt(count.dataset.count) + 1);
+    } else {
+        count.innerHTML = parseInt(count.dataset.count) - 1;
+        count.setAttribute("data-count", parseInt(count.dataset.count) - 1);
+    }
+    if (parseInt(count.dataset.count) > 0) {
+        if (!count.classList.contains("has-count")) {
+            count.classList.add("has-count");
+        }
+    } else {
+        count.classList.remove("has-count");
+        count.innerHTML = '';
     }
 }
 
@@ -11295,10 +11313,10 @@ function generatePack() {
         pack.push(foilCard.id);
     }
 
-    const manaCard = pickRandom(manaCards());
-    if (manaCard) {
-        pack.push(manaCard.id);
-    }
+    // const manaCard = pickRandom(manaCards());
+    // if (manaCard) {
+    //     pack.push(manaCard.id);
+    // }
 
     return pack;
 }
@@ -11376,9 +11394,10 @@ async function renderDeck(deckArea, pack, isDeck = true) {
 
 function updateTts() {
     const deck = loadSavedDeck();
+    const runeDeck = loadSavedDeck(RUNE_KEY);
     const ttsArea = document.querySelector('.tts-area .tts-code');
     if (deck.length) {
-        ttsArea.innerText = deck.flat().join(" ").trim();
+        ttsArea.innerText = deck.flat().join(" ").trim() + " " + runeDeck.flat().join(" ").trim();
     } else {
         ttsArea.innerText = "";
     }
@@ -11389,6 +11408,7 @@ const newDraftBtn = document.querySelector(".new-draft");
 const openPackBtn = document.querySelector(".open-pack");
 const viewDeckBtn = document.querySelector(".view-deck");
 const allPacksBtn = document.querySelector(".all-packs");
+const runeArea = document.querySelector(".rune-area");
 const packArea = document.querySelector(".pack-area");
 const filterBtns = document.querySelectorAll(".filter-btn");
 
@@ -11404,11 +11424,60 @@ window.addEventListener("load", function() {
         updateTts();
         renderDeck(packArea, savedPacks, false);
     }
+
+    runeArea.innerHTML = "<h2 class='heading'>Runes</h2>";
+    
+    const runes = manaCards();
+    const runeDeck = loadSavedDeck(RUNE_KEY).flat();
+    runes.forEach(function(card) {
+        const cardEl = document.createElement("div");
+        cardEl.classList.add("card");
+        cardEl.setAttribute("data-id", card.id);
+        cardEl.setAttribute("data-colour", card.gmNotes?.color_identity);
+        if (runeDeck.includes(card.id)) {
+            cardEl.classList.add("selected");
+        }
+        console.log(runeDeck);
+        const currentRunes = runeDeck.filter((c) => c == card.id );
+        const runeCount = parseInt(currentRunes.flat().length);
+        cardEl.innerHTML = `
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="${card.image}" alt="${card.name}" draggable="false">
+                </div>
+                <div class="card-back">
+                    <img src="${cardBackImg}" alt="Card Back" draggable="false">
+                </div>
+                <div class="rune-count ${runeCount > 0 ? 'has-count' : ''}" data-count="${parseInt(currentRunes.flat().length)}">${runeCount > 0 ? runeCount: ''}</div>
+            </div>
+        `;
+
+        cardEl.addEventListener("mousedown", (e) => {
+            if (e.button === 2) {
+                e.stopImmediatePropagation();
+                removeCardFromDeck(cardEl.getAttribute("data-id"), 0, RUNE_KEY);
+                updateRuneCount(cardEl, false);
+                if (!runeDeck.includes(card.id)) {
+                    cardEl.classList.remove("selected");
+                }
+            } else if (e.button === 0) {
+                saveCardToDeck(cardEl.getAttribute("data-id"), 0, RUNE_KEY);
+                updateRuneCount(cardEl, true);
+                if (!cardEl.classList.contains("selected")) {
+                    cardEl.classList.add("selected");
+                }
+            }
+        });
+        runeArea.appendChild(cardEl);
+    });
+});
+
+window.addEventListener("contextmenu", (e) => {
+    // e.preventDefault();
 });
 
 newDraftBtn.addEventListener("click", function() {
-    clearSavedDeck();
-    clearSavedPacks();
+    clearSavedAll();
     updateTts();
     openPackBtn.classList.remove("hidden");
     packArea.innerHTML = "";

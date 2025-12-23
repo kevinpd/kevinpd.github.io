@@ -82,6 +82,36 @@ button:disabled {
   }
 }
 
+.rune-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  .heading {
+    grid-column: 1/-1;
+  }
+  @media all and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    .card-inner {
+      width: calc((75vw / 4));
+      height: calc((105vw / 4));
+    }
+  }
+  @media all and (min-width: 992px) {
+    grid-template-columns: repeat(5, 1fr);
+    .card-inner {
+      width: calc((75vw / 5));
+      height: calc((105vw / 5));
+    }
+  }
+  @media all and (min-width: 1200px) {
+    grid-template-columns: repeat(6, 1fr);
+    .card-inner {
+      width: calc((75vw / 6));
+      height: calc((105vw / 6));
+    }
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -148,6 +178,18 @@ button:disabled {
       .card-inner {
         transform: scale(1.1);
       }
+    }
+  }
+  .rune-count {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+    border-radius: 50%;
+    &.has-count {
+      padding: 3px 10px 5px;
     }
   }
 }
