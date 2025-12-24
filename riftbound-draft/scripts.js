@@ -11151,6 +11151,7 @@ const DECK_KEY = "draft_deck";
 const RUNE_KEY = "rune_deck";
 const delay = ms => new Promise(res => setTimeout(res, ms));
 const packAmount = document.querySelector(".pack-amount");
+const popup = document.querySelector(".zoom-card");
 const activeColourFilters = new Set();
 
 let packs = {};
@@ -11296,6 +11297,13 @@ function applyColourFilter() {
   });
 }
 
+function zoomCard(cardImage) {
+    popup.innerHTML = `
+        <img src="${cardImage}" alt="" />
+    `;
+    popup.classList.add("active");
+}
+
 function generatePack() {
     resetRunes();
     
@@ -11385,20 +11393,28 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                 `;
 
                 if (isDeck) {
-                    cardEl.addEventListener("click", () => {
-                        if (!cardEl.classList.contains("removed")) {
-                            removeCardFromDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
-                            cardEl.classList.add("removed");
+                    cardEl.addEventListener("mousedown", (e) => {
+                        if (e.button === 0) {
+                            if (!cardEl.classList.contains("removed")) {
+                                removeCardFromDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
+                                cardEl.classList.add("removed");
+                            }
+                        } else if (e.button === 2) {
+                            zoomCard(card.image);
                         }
                     });
                 } else {
-                    cardEl.addEventListener("click", () => {
-                        if (cardEl.classList.contains("selected")) {
-                            removeCardFromDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
-                            cardEl.classList.remove("selected");
-                        } else {
-                            saveCardToDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
-                            cardEl.classList.add("selected");
+                    cardEl.addEventListener("mousedown", (e) => {
+                        if (e.button === 0) {
+                            if (cardEl.classList.contains("selected")) {
+                                removeCardFromDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
+                                cardEl.classList.remove("selected");
+                            } else {
+                                saveCardToDeck(cardEl.getAttribute("data-id"), cardEl.getAttribute("data-pack"));
+                                cardEl.classList.add("selected");
+                            }
+                        } else if (e.button === 2) {
+                            zoomCard(card.image);
                         }
                     });
                 }
@@ -11496,6 +11512,8 @@ window.addEventListener("load", function() {
 window.addEventListener("contextmenu", (e) => {
     e.preventDefault();
 });
+
+popup.addEventListener("mousedown", () => {popup.classList.remove("active")});
 
 newDraftBtn.addEventListener("click", function() {
     clearSavedAll();
