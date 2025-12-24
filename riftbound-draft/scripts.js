@@ -11437,11 +11437,15 @@ window.addEventListener("load", function() {
         openPackBtn.classList.add("hidden");
         updateTts();
         renderDeck(packArea, deck, true);
+        viewDeckBtn.classList.remove("hidden");
+        allPacksBtn.classList.remove("hidden");
     } else if (savedPacks.length) {
         openPackBtn.classList.add("hidden");
         updateTts();
         renderDeck(packArea, savedPacks, false);
+        allPacksBtn.classList.remove("hidden");
     }
+
 
     runeArea.innerHTML = "<h2 class='heading'>Runes</h2>";
     
@@ -11498,6 +11502,9 @@ newDraftBtn.addEventListener("click", function() {
     updateTts();
     openPackBtn.classList.remove("hidden");
     packArea.innerHTML = "";
+    newDraftBtn.classList.add("hidden");
+    viewDeckBtn.classList.add("hidden");
+    allPacksBtn.classList.add("hidden");
 });
 
 openPackBtn.addEventListener("click", () => {
@@ -11507,6 +11514,9 @@ openPackBtn.addEventListener("click", () => {
         openPackBtn.classList.add("hidden");
     }
     renderDeck(packArea, loadSavedPacks(), false);
+    newDraftBtn.classList.remove("hidden");
+    viewDeckBtn.classList.remove("hidden");
+    allPacksBtn.classList.remove("hidden");
 });
 
 viewDeckBtn.addEventListener("click", () => {
