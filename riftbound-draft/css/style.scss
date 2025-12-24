@@ -54,13 +54,24 @@ h1 {
 }
 
 button {
-	background: #7b5cff;
-	border: none;
+	position: relative;
 	padding: 12px 24px;
-	font-size: 16px;
-	border-radius: 6px;
 	cursor: pointer;
 	color: #fff;
+	background: #7b5cff;
+	border: none;
+	border-radius: 6px;
+	box-shadow: 0 0 5px transparent;
+	font-size: 16px;
+	z-index: 0;
+	overflow: hidden;
+	transition: all ease 0.3s;
+	&:hover,
+	&:focus,
+	&:active {
+		box-shadow: 0 0 5px white;
+		transform: scale(1.05);
+	}
 }
 
 button:disabled {
@@ -287,6 +298,9 @@ button:disabled {
 	border: 1px solid white;
 	border-radius: 50%;
 	transition: all ease .3s;
+	&::before {
+		background: linear-gradient(to top, transparent 0%, rgba(200,200,200,0.6) 50%, transparent 100%);
+	}
 	img {
 		width: 100%;
 	}
