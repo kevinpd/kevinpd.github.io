@@ -5473,7 +5473,7 @@ const cards = {
         description: "When you play this, play a 1 Might Recruit token at your base. Kill this: Recycle up to 4 cards from trashes.",
         image: "https://steamusercontent-a.akamaihd.net/ugc/9380291741986165265/66C8B725099A0BFF2373E2DDC3074B22E7A81194/",
         gmNotes: {
-            "color_identity": "calm",
+            "color_identity": "order",
             "power_cost": "0",
             "optional_power_cost": "0",
             "energy_cost": "2",
