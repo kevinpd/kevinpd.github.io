@@ -8164,7 +8164,7 @@ const cards = {
         description: "",
         image: "https://steamusercontent-a.akamaihd.net/ugc/14395858168216297805/4FBD0A6AF76132E83122D78873A4CD019C727787/",
         gmNotes: {
-            "color_identity": "mind",
+            "color_identity": "body",
             "type": "spell",
             "rarity": 3,
             "isSignature": false,
