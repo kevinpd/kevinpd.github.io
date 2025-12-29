@@ -11386,9 +11386,6 @@ async function renderDeck(deckArea, pack, isDeck = true) {
                         <div class="card-front">
                             <img src="${card.image}" alt="${card.name}" draggable="false">
                         </div>
-                        <div class="card-back">
-                            <img src="${cardBackImg}" alt="Card Back" draggable="false">
-                        </div>
                     </div>
                 `;
 
@@ -11481,9 +11478,6 @@ window.addEventListener("load", function() {
             <div class="card-inner">
                 <div class="card-front">
                     <img src="${card.image}" alt="${card.name}" draggable="false">
-                </div>
-                <div class="card-back">
-                    <img src="${cardBackImg}" alt="Card Back" draggable="false">
                 </div>
                 <div class="rune-count ${runeCount > 0 ? 'has-count' : ''}" data-count="${parseInt(currentRunes.flat().length)}">${runeCount > 0 ? runeCount: ''}</div>
             </div>
