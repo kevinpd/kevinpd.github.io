@@ -262,6 +262,12 @@ button:disabled {
 	border-radius: 8px;
 }
 
+.filter-options {
+	+ .filter-options:not(:last-child) {
+		margin-top: 10px;
+	}
+}
+
 .filter-btn {
 	width: 65px;
 	height: 65px;
@@ -284,12 +290,12 @@ button:disabled {
 	}
 	&.grey {
 		img {
-		filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(310%) hue-rotate(203deg) brightness(115%) contrast(78%);
+			filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(310%) hue-rotate(203deg) brightness(115%) contrast(78%);
 		}
 		&.active {
-		img {
-			filter: brightness(0) saturate(100%);
-		}
+			img {
+				filter: brightness(0) saturate(100%);
+			}
 		}
 	}
 }

@@ -11153,6 +11153,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 const packAmount = document.querySelector(".pack-amount");
 const popup = document.querySelector(".zoom-card");
 const activeColourFilters = new Set();
+const activeTypeFilters = new Set();
 
 let packs = {};
 let deck = {};
@@ -11295,6 +11296,27 @@ function applyColourFilter() {
 
     cardEl.classList.toggle("hidden", !matches);
   });
+}
+
+function applyTypeFilter() {
+    const cardsEls = document.querySelectorAll(".card");
+
+    if (activeTypeFilters.size === 0) {
+        cardsEls.forEach(card => card.classList.remove("hidden"));
+        return;
+    }
+
+    cardsEls.forEach(cardEl => {
+        const id = cardEl.dataset.id;
+        const card = cards[id];
+        const colours = card.gmNotes.type
+        ?.split(",")
+        .map(c => c.trim());
+
+        const matches = colours?.some(c => activeTypeFilters.has(c));
+
+        cardEl.classList.toggle("hidden", !matches);
+    });
 }
 
 function zoomCard(cardImage) {
@@ -11441,7 +11463,8 @@ const viewDeckBtn = document.querySelector(".view-deck");
 const allPacksBtn = document.querySelector(".all-packs");
 const runeArea = document.querySelector(".rune-area");
 const packArea = document.querySelector(".pack-area");
-const filterBtns = document.querySelectorAll(".filter-btn");
+const filterColourBtns = document.querySelectorAll(".filter-btn.colour");
+const filterTypeBtns = document.querySelectorAll(".filter-btn.type");
 
 window.addEventListener("load", function() {
     const savedPacks = loadSavedPacks();
@@ -11541,7 +11564,7 @@ allPacksBtn.addEventListener("click", () => {
     renderDeck(packArea, packs, false);
 });
 
-filterBtns.forEach(btn => {
+filterColourBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     const colour = btn.dataset.colour;
 
@@ -11554,5 +11577,21 @@ filterBtns.forEach(btn => {
     }
 
     applyColourFilter();
+  });
+});
+
+filterTypeBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const type = btn.dataset.type;
+
+    if (activeTypeFilters.has(type)) {
+      activeTypeFilters.delete(type);
+      btn.classList.remove("active");
+    } else {
+      activeTypeFilters.add(type);
+      btn.classList.add("active");
+    }
+
+    applyTypeFilter();
   });
 });
