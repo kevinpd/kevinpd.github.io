@@ -11152,8 +11152,10 @@ const RUNE_KEY = "rune_deck";
 const delay = ms => new Promise(res => setTimeout(res, ms));
 const packAmount = document.querySelector(".pack-amount");
 const popup = document.querySelector(".zoom-card");
-const activeColourFilters = new Set();
-const activeTypeFilters = new Set();
+const activeFilters = {
+    colours: new Set(),
+    types: new Set()
+};
 
 let packs = {};
 let deck = {};
@@ -11277,10 +11279,10 @@ function resetRunes() {
     });
 }
 
-function applyColourFilter() {
+function applyFilter() {
   const cardsEls = document.querySelectorAll(".card");
 
-  if (activeColourFilters.size === 0) {
+  if (activeFilters.size === 0) {
     cardsEls.forEach(card => card.classList.remove("hidden"));
     return;
   }
@@ -11288,35 +11290,18 @@ function applyColourFilter() {
   cardsEls.forEach(cardEl => {
     const id = cardEl.dataset.id;
     const card = cards[id];
-    const colours = card.gmNotes.color_identity
-      ?.split(",")
-      .map(c => c.trim());
+    if (!card) return;
 
-    const matches = colours?.some(c => activeColourFilters.has(c));
+    const cardColours = card.gmNotes?.color_identity ? card.gmNotes.color_identity.split(",").map(c => c.trim()): [];
+    const cardTypes = card.gmNotes?.type ? card.gmNotes.type.split(",").map(t => t.trim()) : [];
+    
+    const colourMatch = activeFilters.colours.size === 0 || cardColours.some(c => activeFilters.colours.has(c));
+    const typeMatch = activeFilters.types.size === 0 || cardTypes.some(t => activeFilters.types.has(t));
 
-    cardEl.classList.toggle("hidden", !matches);
+    const shouldShow = colourMatch && typeMatch;
+
+    cardEl.classList.toggle("hidden", !shouldShow);
   });
-}
-
-function applyTypeFilter() {
-    const cardsEls = document.querySelectorAll(".card");
-
-    if (activeTypeFilters.size === 0) {
-        cardsEls.forEach(card => card.classList.remove("hidden"));
-        return;
-    }
-
-    cardsEls.forEach(cardEl => {
-        const id = cardEl.dataset.id;
-        const card = cards[id];
-        const colours = card.gmNotes.type
-        ?.split(",")
-        .map(c => c.trim());
-
-        const matches = colours?.some(c => activeTypeFilters.has(c));
-
-        cardEl.classList.toggle("hidden", !matches);
-    });
 }
 
 function zoomCard(cardImage) {
@@ -11463,8 +11448,7 @@ const viewDeckBtn = document.querySelector(".view-deck");
 const allPacksBtn = document.querySelector(".all-packs");
 const runeArea = document.querySelector(".rune-area");
 const packArea = document.querySelector(".pack-area");
-const filterColourBtns = document.querySelectorAll(".filter-btn.colour");
-const filterTypeBtns = document.querySelectorAll(".filter-btn.type");
+const filterBtns = document.querySelectorAll(".filter-btn");
 
 window.addEventListener("load", function() {
     const savedPacks = loadSavedPacks();
@@ -11564,34 +11548,21 @@ allPacksBtn.addEventListener("click", () => {
     renderDeck(packArea, packs, false);
 });
 
-filterColourBtns.forEach(btn => {
+filterBtns.forEach(btn => {
   btn.addEventListener("click", () => {
-    const colour = btn.dataset.colour;
+    const filterType = btn.dataset.filter;
+    const value = btn.dataset.val;
 
-    if (activeColourFilters.has(colour)) {
-      activeColourFilters.delete(colour);
-      btn.classList.remove("active");
+    const set = filterType === "colour" ? activeFilters.colours : activeFilters.types;
+
+    if (set.has(value)) {
+        set.delete(value);
+        btn.classList.remove("active");
     } else {
-      activeColourFilters.add(colour);
-      btn.classList.add("active");
+        set.add(value);
+        btn.classList.add("active");
     }
 
-    applyColourFilter();
-  });
-});
-
-filterTypeBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const type = btn.dataset.type;
-
-    if (activeTypeFilters.has(type)) {
-      activeTypeFilters.delete(type);
-      btn.classList.remove("active");
-    } else {
-      activeTypeFilters.add(type);
-      btn.classList.add("active");
-    }
-
-    applyTypeFilter();
+    applyFilter();
   });
 });
