@@ -16,6 +16,7 @@ const guestList = [
     'Sam',
     'Tom',
     'Tara',
+    'ZeWang',
 ];
 
 const friendsList = [
